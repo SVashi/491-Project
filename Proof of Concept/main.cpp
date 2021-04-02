@@ -28,7 +28,7 @@ void Input() {
                 if (x > 1) {
                     x--;
                     Draw();
-                    sleep(0.9);
+                    sleep(1);
                 }
                 break;
             case 'd':
@@ -36,7 +36,7 @@ void Input() {
                 {
                     x++;
                     Draw();
-                    sleep(0.9);
+                    sleep(1);
                 }
                 break;
             case 'w':
@@ -44,7 +44,7 @@ void Input() {
                 {
                     y--;
                     Draw();
-                    sleep(0.9);
+                    sleep(1);
                 }
                 break;
             case 's':
@@ -52,7 +52,7 @@ void Input() {
                 {
                     y++;
                     Draw();
-                    sleep(0.9);
+                    sleep(1);
                 }
                 break;
             case 'x':
