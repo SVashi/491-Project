@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name batteryless_gaming_device-rescue)(type Legacy)(uri ${KIPRJMOD}/batteryless_gaming_device-rescue.lib)(options "")(descr ""))
+  (lib (name johns_library)(type Legacy)(uri ${KIPRJMOD}/johns_library.lib)(options "")(descr ""))
+)
