@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name VREG_V62)(type KiCad)(uri "C:/Users/jakel/Documents/School/Senior Year Classes/Senior Design/BoostRegulatorBreakoutPCB/TPS61201DRCT/VREG_V62")(options "")(descr ""))
+  (lib (name BoostRegulatorBreakoutPCB)(type KiCad)(uri ${KIPRJMOD}/BoostRegulatorBreakoutPCB.pretty)(options "")(descr ""))
+)

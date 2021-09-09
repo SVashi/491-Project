@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name TPS61201DRCT)(type Legacy)(uri C:/491-Project/KiCad/BoostRegulatorBreakoutPCB/BoostRegulatorBreakoutPCB/TPS61201DRCT/TPS61201DRCT.lib)(options "")(descr ""))
+  (lib (name BoostRegulatorBreakoutPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/BoostRegulatorBreakoutPCB-rescue.lib)(options "")(descr ""))
+)

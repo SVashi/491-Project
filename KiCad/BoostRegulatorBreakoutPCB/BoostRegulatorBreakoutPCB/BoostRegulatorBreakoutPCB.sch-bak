@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "BoostRegulatorBreakoutPCB"
+Date "2021-09-05"
+Rev "00"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x05_Male J2
+U 1 1 61369942
+P 6800 4800
+F 0 "J2" H 6908 5181 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 6908 5090 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 6800 4800 50  0001 C CNN
+F 3 "~" H 6800 4800 50  0001 C CNN
+	1    6800 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 6136AEDE
+P 4200 4750
+F 0 "J1" H 4172 4724 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 4172 4633 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4200 4750 50  0001 C CNN
+F 3 "~" H 4200 4750 50  0001 C CNN
+	1    4200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4550 4450 4550
+Wire Wire Line
+	4450 4550 4450 5150
+Wire Wire Line
+	4450 5150 4800 5150
+Wire Wire Line
+	4400 4650 4500 4650
+Wire Wire Line
+	4500 4650 4500 3950
+Wire Wire Line
+	4500 3950 6200 3950
+Wire Wire Line
+	6200 3950 6200 4250
+Wire Wire Line
+	4400 4750 4550 4750
+Wire Wire Line
+	4550 4750 4550 4450
+Wire Wire Line
+	4550 4450 4800 4450
+Wire Wire Line
+	4400 4850 4500 4850
+Wire Wire Line
+	4500 4850 4500 5650
+Wire Wire Line
+	4500 5650 6300 5650
+Wire Wire Line
+	6300 5650 6300 5350
+Wire Wire Line
+	6300 5350 6200 5350
+Wire Wire Line
+	4400 4950 4550 4950
+Wire Wire Line
+	4550 4950 4550 4800
+Wire Wire Line
+	4550 4800 4600 4800
+Wire Wire Line
+	4600 4800 4600 4750
+Wire Wire Line
+	4600 4750 4700 4750
+Wire Wire Line
+	4400 5050 4650 5050
+Wire Wire Line
+	4650 5050 4650 4250
+Wire Wire Line
+	4650 4250 4800 4250
+Wire Wire Line
+	6600 4600 6250 4600
+Wire Wire Line
+	6250 4600 6250 4050
+Wire Wire Line
+	6250 4050 4700 4050
+Wire Wire Line
+	4700 4050 4700 4650
+Wire Wire Line
+	4700 4650 4800 4650
+Wire Wire Line
+	6600 4700 6300 4700
+Wire Wire Line
+	6300 4700 6300 4000
+Wire Wire Line
+	6300 4000 4600 4000
+Wire Wire Line
+	4600 4000 4600 4550
+Wire Wire Line
+	4600 4550 4800 4550
+Wire Wire Line
+	6600 4800 6250 4800
+Wire Wire Line
+	6250 4800 6250 5450
+Wire Wire Line
+	6250 5450 6200 5450
+Wire Wire Line
+	6600 4900 6150 4900
+Wire Wire Line
+	6150 4900 6150 4100
+Wire Wire Line
+	6150 4100 4750 4100
+Wire Wire Line
+	4750 4100 4750 4350
+Wire Wire Line
+	4750 4350 4800 4350
+Wire Wire Line
+	6600 5000 6600 5600
+Wire Wire Line
+	6600 5600 4750 5600
+Wire Wire Line
+	4750 5600 4750 4950
+Wire Wire Line
+	4750 4950 4800 4950
+$Comp
+L Device:L L1
+U 1 1 6138EE62
+P 3450 4750
+F 0 "L1" H 3407 4704 50  0000 R CNN
+F 1 "2.2 u" H 3407 4795 50  0000 R CNN
+F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 3450 4750 50  0001 C CNN
+F 3 "~" H 3450 4750 50  0001 C CNN
+	1    3450 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 4450 3450 4450
+Wire Wire Line
+	3450 4450 3450 4600
+Connection ~ 4550 4450
+Wire Wire Line
+	3450 4900 4700 4900
+Wire Wire Line
+	4700 4900 4700 4750
+Connection ~ 4700 4750
+Wire Wire Line
+	4700 4750 4800 4750
+$Comp
+L Device:C C1
+U 1 1 6139316E
+P 3450 5150
+F 0 "C1" H 3565 5196 50  0000 L CNN
+F 1 "10 u" H 3565 5105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3488 5000 50  0001 C CNN
+F 3 "~" H 3450 5150 50  0001 C CNN
+	1    3450 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4900 3450 5000
+Connection ~ 3450 4900
+$Comp
+L power:GND #PWR01
+U 1 1 613945DD
+P 3450 5300
+F 0 "#PWR01" H 3450 5050 50  0001 C CNN
+F 1 "GND" H 3455 5127 50  0000 C CNN
+F 2 "" H 3450 5300 50  0001 C CNN
+F 3 "" H 3450 5300 50  0001 C CNN
+	1    3450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61394CA4
+P 6300 5650
+F 0 "#PWR04" H 6300 5400 50  0001 C CNN
+F 1 "GND" H 6305 5477 50  0000 C CNN
+F 2 "" H 6300 5650 50  0001 C CNN
+F 3 "" H 6300 5650 50  0001 C CNN
+	1    6300 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 5650
+$Comp
+L power:GND #PWR03
+U 1 1 6139561A
+P 6250 5450
+F 0 "#PWR03" H 6250 5200 50  0001 C CNN
+F 1 "GND" H 6255 5277 50  0000 C CNN
+F 2 "" H 6250 5450 50  0001 C CNN
+F 3 "" H 6250 5450 50  0001 C CNN
+	1    6250 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 5450
+$Comp
+L Device:C C2
+U 1 1 61395BE3
+P 4300 5300
+F 0 "C2" H 4415 5346 50  0000 L CNN
+F 1 ".1 u" H 4415 5255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4338 5150 50  0001 C CNN
+F 3 "~" H 4300 5300 50  0001 C CNN
+	1    4300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4250 7200 4250
+$Comp
+L power:GND #PWR05
+U 1 1 61398728
+P 7200 4550
+F 0 "#PWR05" H 7200 4300 50  0001 C CNN
+F 1 "GND" H 7205 4377 50  0000 C CNN
+F 2 "" H 7200 4550 50  0001 C CNN
+F 3 "" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 61398ECB
+P 7700 4100
+F 0 "#FLG01" H 7700 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 7700 4273 50  0000 C CNN
+F 2 "" H 7700 4100 50  0001 C CNN
+F 3 "~" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 613998A1
+P 7700 4100
+F 0 "#PWR06" H 7700 3850 50  0001 C CNN
+F 1 "GND" H 7705 3927 50  0000 C CNN
+F 2 "" H 7700 4100 50  0001 C CNN
+F 3 "" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5150 4300 5150
+Connection ~ 4450 5150
+$Comp
+L power:GND #PWR02
+U 1 1 6139AB58
+P 4300 5450
+F 0 "#PWR02" H 4300 5200 50  0001 C CNN
+F 1 "GND" H 4305 5277 50  0000 C CNN
+F 2 "" H 4300 5450 50  0001 C CNN
+F 3 "" H 4300 5450 50  0001 C CNN
+	1    4300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 6139B33A
+P 7200 4400
+F 0 "C3" H 7315 4446 50  0000 L CNN
+F 1 "10 u" H 7315 4355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7238 4250 50  0001 C CNN
+F 3 "~" H 7200 4400 50  0001 C CNN
+	1    7200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS61201DRCT:TPS61201DRCT U1
+U 1 1 613964E2
+P 5500 4850
+F 0 "U1" H 5500 5720 50  0000 C CNN
+F 1 "TPS61201DRCT" H 5500 5629 50  0000 C CNN
+F 2 "BoostRegulatorBreakoutPCB:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm_HandSolder" H 5500 4850 50  0001 L BNN
+F 3 "" H 5500 4850 50  0001 L BNN
+	1    5500 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6200 4250
+$EndSCHEMATC
