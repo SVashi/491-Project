@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L batteryless_gaming_device-rescue:TPS610995DRV-johns_library U?
-U 1 1 61358B6B
-P 4050 800
-F 0 "U?" H 4000 815 50  0000 C CNN
-F 1 "TPS610995DRV" H 4000 724 50  0000 C CNN
-F 2 "" H 4050 800 50  0001 C CNN
-F 3 "" H 4050 800 50  0001 C CNN
-	1    4050 800 
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 2800 3600 1650 1100
 U 61991596
@@ -135,154 +124,287 @@ F1 "hand_crank_generator.sch" 50
 F2 "Vout" O R 2300 4650 50 
 F3 "generator_voltage" O R 2300 5200 50 
 $EndSheet
-Wire Wire Line
-	4950 2950 5350 2950
-Wire Wire Line
-	3650 2950 4250 2950
-Wire Wire Line
-	3900 2450 4250 2450
-Connection ~ 4250 2450
-Wire Wire Line
-	5600 2250 5900 2250
-Connection ~ 5600 2250
-Wire Wire Line
-	5600 2450 5600 2250
-Wire Wire Line
-	5250 2250 5600 2250
-Connection ~ 5350 2950
-Wire Wire Line
-	5600 2650 5600 2950
-Wire Wire Line
-	5600 2950 5350 2950
-Connection ~ 4250 2950
-Wire Wire Line
-	3650 2850 3650 2950
-Connection ~ 3900 2450
-Wire Wire Line
-	3650 2450 3900 2450
-Wire Wire Line
-	3650 2450 3650 2650
-$Comp
-L Device:C_Small SupC?
-U 1 1 608710A0
-P 3650 2750
-F 0 "SupC?" H 3742 2796 50  0000 L CNN
-F 1 "2.2mF" H 3742 2705 50  0000 L CNN
-F 2 "" H 3650 2750 50  0001 C CNN
-F 3 "~" H 3650 2750 50  0001 C CNN
-	1    3650 2750
-	1    0    0    -1  
-$EndComp
-Connection ~ 4800 2950
-Wire Wire Line
-	4250 2950 4800 2950
-Wire Wire Line
-	4250 2850 4250 2950
-$Comp
-L Device:C_Small C?
-U 1 1 608609DD
-P 4250 2750
-F 0 "C?" H 4342 2796 50  0000 L CNN
-F 1 "10u" H 4342 2705 50  0000 L CNN
-F 2 "" H 4250 2750 50  0001 C CNN
-F 3 "~" H 4250 2750 50  0001 C CNN
-	1    4250 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 608609D7
-P 4900 3050
-F 0 "#PWR?" H 4900 2800 50  0001 C CNN
-F 1 "GND" H 4905 2877 50  0000 C CNN
-F 2 "" H 4900 3050 50  0001 C CNN
-F 3 "" H 4900 3050 50  0001 C CNN
-	1    4900 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 4950 2950
-Wire Wire Line
-	5350 2950 5350 2450
-Connection ~ 4900 2950
-Wire Wire Line
-	4950 2950 4950 2900
-Wire Wire Line
-	4900 2950 4950 2950
-Wire Wire Line
-	4900 2950 4900 3050
-Wire Wire Line
-	4800 2950 4800 2900
-Wire Wire Line
-	4900 2950 4800 2950
-$Comp
-L Device:C_Small C?
-U 1 1 608609BF
-P 5600 2550
-F 0 "C?" H 5692 2596 50  0000 L CNN
-F 1 "10u" H 5692 2505 50  0000 L CNN
-F 2 "" H 5600 2550 50  0001 C CNN
-F 3 "~" H 5600 2550 50  0001 C CNN
-	1    5600 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V8 #PWR?
-U 1 1 608609AD
-P 5900 2200
-F 0 "#PWR?" H 5900 2050 50  0001 C CNN
-F 1 "+3V8" H 5915 2373 50  0000 C CNN
-F 2 "" H 5900 2200 50  0001 C CNN
-F 3 "" H 5900 2200 50  0001 C CNN
-	1    5900 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2200 5900 2250
-$Comp
-L batteryless_gaming_device-rescue:TPS610995DRV-johns_library U?
-U 1 1 608609A4
-P 4900 2000
-F 0 "U?" H 4850 2015 50  0000 C CNN
-F 1 "TPS610995DRV" H 4850 1924 50  0000 C CNN
-F 2 "" H 4900 2000 50  0001 C CNN
-F 3 "" H 4900 2000 50  0001 C CNN
-	1    4900 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 2250 4000 2250
-Wire Wire Line
-	3900 2450 3900 2250
-Wire Wire Line
-	4400 2450 4250 2450
-Connection ~ 4400 2450
-Wire Wire Line
-	4400 2650 4450 2650
-Wire Wire Line
-	4400 2450 4400 2650
-Wire Wire Line
-	4450 2450 4400 2450
-Wire Wire Line
-	4300 2250 4450 2250
-Wire Wire Line
-	5250 2450 5350 2450
-Wire Wire Line
-	4250 2650 4250 2450
-$Comp
-L Device:L L?
-U 1 1 60860992
-P 4150 2250
-F 0 "L?" V 4340 2250 50  0000 C CNN
-F 1 "2.2u" V 4249 2250 50  0000 C CNN
-F 2 "" H 4150 2250 50  0001 C CNN
-F 3 "~" H 4150 2250 50  0001 C CNN
-	1    4150 2250
-	0    -1   -1   0   
-$EndComp
 $Sheet
-S 6650 2450 1900 3100
+S 8250 2500 1900 3100
 U 61926AE2
 F0 "Microcontroller" 50
 F1 "micro_msp430fr5994.sch" 50
 $EndSheet
+$Comp
+L Regulator_Switching:TPS61201DRC U?
+U 1 1 6199ED82
+P 5800 3900
+F 0 "U?" H 5800 4367 50  0000 C CNN
+F 1 "TPS61201DRC" H 5800 4276 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 5800 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61200.pdf" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 61919F7B
+P 5800 3350
+F 0 "L?" V 5990 3350 50  0000 C CNN
+F 1 "2.2u" V 5899 3350 50  0000 C CNN
+F 2 "" H 5800 3350 50  0001 C CNN
+F 3 "~" H 5800 3350 50  0001 C CNN
+	1    5800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6191B0EE
+P 4650 3850
+F 0 "C?" H 4742 3896 50  0000 L CNN
+F 1 "10uF" H 4742 3805 50  0000 L CNN
+F 2 "" H 4650 3850 50  0001 C CNN
+F 3 "~" H 4650 3850 50  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6191D39C
+P 5800 4500
+F 0 "#PWR?" H 5800 4250 50  0001 C CNN
+F 1 "GND" H 5805 4327 50  0000 C CNN
+F 2 "" H 5800 4500 50  0001 C CNN
+F 3 "" H 5800 4500 50  0001 C CNN
+	1    5800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6191F54B
+P 7400 3950
+F 0 "C?" H 7492 3996 50  0000 L CNN
+F 1 "10uF" H 7492 3905 50  0000 L CNN
+F 2 "" H 7400 3950 50  0001 C CNN
+F 3 "~" H 7400 3950 50  0001 C CNN
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6192335B
+P 6350 4000
+F 0 "C?" H 6442 4046 50  0000 L CNN
+F 1 "1uF" H 6442 3955 50  0000 L CNN
+F 2 "" H 6350 4000 50  0001 C CNN
+F 3 "~" H 6350 4000 50  0001 C CNN
+	1    6350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61923EAF
+P 6350 4150
+F 0 "#PWR?" H 6350 3900 50  0001 C CNN
+F 1 "GND" H 6355 3977 50  0000 C CNN
+F 2 "" H 6350 4150 50  0001 C CNN
+F 3 "" H 6350 4150 50  0001 C CNN
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4150 6350 4100
+Wire Wire Line
+	6350 3900 6200 3900
+$Comp
+L Device:C_Small C?
+U 1 1 619264DA
+P 7800 3950
+F 0 "C?" H 7892 3996 50  0000 L CNN
+F 1 "10uF" H 7892 3905 50  0000 L CNN
+F 2 "" H 7800 3950 50  0001 C CNN
+F 3 "~" H 7800 3950 50  0001 C CNN
+	1    7800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619278B4
+P 5000 3850
+F 0 "C?" H 5092 3896 50  0000 L CNN
+F 1 "0.1uF" H 5092 3805 50  0000 L CNN
+F 2 "" H 5000 3850 50  0001 C CNN
+F 3 "~" H 5000 3850 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61928AB0
+P 7000 3950
+F 0 "C?" H 7092 3996 50  0000 L CNN
+F 1 "0.1uF" H 7092 3905 50  0000 L CNN
+F 2 "" H 7000 3950 50  0001 C CNN
+F 3 "~" H 7000 3950 50  0001 C CNN
+	1    7000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6192C619
+P 6650 4000
+F 0 "R?" H 6718 4046 50  0000 L CNN
+F 1 "R_US" H 6718 3955 50  0000 L CNN
+F 2 "" V 6690 3990 50  0001 C CNN
+F 3 "~" H 6650 4000 50  0001 C CNN
+	1    6650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6192D958
+P 6650 4350
+F 0 "R?" H 6718 4396 50  0000 L CNN
+F 1 "R_US" H 6718 4305 50  0000 L CNN
+F 2 "" V 6690 4340 50  0001 C CNN
+F 3 "~" H 6650 4350 50  0001 C CNN
+	1    6650 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3700 5350 3800
+Wire Wire Line
+	5350 3800 5400 3800
+Connection ~ 5350 3700
+Wire Wire Line
+	5350 3700 5400 3700
+Wire Wire Line
+	5350 3800 5350 3900
+Wire Wire Line
+	5350 3900 5400 3900
+Connection ~ 5350 3800
+Wire Wire Line
+	5400 4000 5350 4000
+Wire Wire Line
+	5350 4000 5350 3900
+Connection ~ 5350 3900
+Wire Wire Line
+	5250 3700 5250 3350
+Wire Wire Line
+	5250 3350 5650 3350
+Connection ~ 5250 3700
+Wire Wire Line
+	5250 3700 5350 3700
+Wire Wire Line
+	5950 3350 6300 3350
+Wire Wire Line
+	6300 3350 6300 3700
+Wire Wire Line
+	6300 3700 6200 3700
+Wire Wire Line
+	4650 3700 5000 3700
+Wire Wire Line
+	4650 3750 4650 3700
+Wire Wire Line
+	5000 3750 5000 3700
+Connection ~ 5000 3700
+Wire Wire Line
+	5000 3700 5250 3700
+Wire Wire Line
+	5700 4400 5700 4450
+Wire Wire Line
+	5700 4450 5800 4450
+Wire Wire Line
+	5800 4450 5800 4400
+Wire Wire Line
+	5800 4450 5900 4450
+Wire Wire Line
+	5900 4450 5900 4400
+Connection ~ 5800 4450
+Wire Wire Line
+	5800 4450 5800 4500
+$Comp
+L power:GND #PWR?
+U 1 1 61939A8D
+P 4850 4100
+F 0 "#PWR?" H 4850 3850 50  0001 C CNN
+F 1 "GND" H 4855 3927 50  0000 C CNN
+F 2 "" H 4850 4100 50  0001 C CNN
+F 3 "" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3950 4650 4050
+Wire Wire Line
+	5000 4050 5000 3950
+Wire Wire Line
+	4650 4050 4850 4050
+Wire Wire Line
+	4850 4100 4850 4050
+Connection ~ 4850 4050
+Wire Wire Line
+	4850 4050 5000 4050
+Wire Wire Line
+	7000 3800 7000 3850
+Wire Wire Line
+	7000 3800 7400 3800
+Wire Wire Line
+	7400 3800 7400 3850
+Connection ~ 7000 3800
+Wire Wire Line
+	7400 3800 7800 3800
+Wire Wire Line
+	7800 3800 7800 3850
+Connection ~ 7400 3800
+Wire Wire Line
+	7000 4050 7000 4100
+Wire Wire Line
+	7000 4100 7400 4100
+Wire Wire Line
+	7400 4100 7400 4050
+Wire Wire Line
+	7400 4100 7800 4100
+Wire Wire Line
+	7800 4100 7800 4050
+Connection ~ 7400 4100
+Wire Wire Line
+	7400 4100 7400 4150
+$Comp
+L power:GND #PWR?
+U 1 1 61944A54
+P 7400 4150
+F 0 "#PWR?" H 7400 3900 50  0001 C CNN
+F 1 "GND" H 7405 3977 50  0000 C CNN
+F 2 "" H 7400 4150 50  0001 C CNN
+F 3 "" H 7400 4150 50  0001 C CNN
+	1    7400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3800 6650 3800
+Wire Wire Line
+	6650 3850 6650 3800
+Connection ~ 6650 3800
+Wire Wire Line
+	6650 3800 7000 3800
+Wire Wire Line
+	6650 4150 6650 4200
+$Comp
+L power:GND #PWR?
+U 1 1 6194D7CB
+P 6650 4550
+F 0 "#PWR?" H 6650 4300 50  0001 C CNN
+F 1 "GND" H 6655 4377 50  0000 C CNN
+F 2 "" H 6650 4550 50  0001 C CNN
+F 3 "" H 6650 4550 50  0001 C CNN
+	1    6650 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4550 6650 4500
+Wire Wire Line
+	6650 4150 6550 4150
+Wire Wire Line
+	6550 4150 6550 4450
+Wire Wire Line
+	6550 4450 6200 4450
+Wire Wire Line
+	6200 4450 6200 4100
+Connection ~ 6650 4150
 $EndSCHEMATC
