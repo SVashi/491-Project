@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Battery Free Gaming Device"
 Date ""
 Rev "Rev 0"
@@ -133,6 +133,7 @@ U 619A7303
 F0 "Hand Crank" 50
 F1 "hand_crank_generator.sch" 50
 F2 "Vout" O R 2300 4650 50 
+F3 "generator_voltage" O R 2300 5200 50 
 $EndSheet
 Wire Wire Line
 	4950 2950 5350 2950
@@ -162,10 +163,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 2450 3650 2650
 $Comp
-L Device:C_Small SupC
+L Device:C_Small SupC?
 U 1 1 608710A0
 P 3650 2750
-F 0 "SupC" H 3742 2796 50  0000 L CNN
+F 0 "SupC?" H 3742 2796 50  0000 L CNN
 F 1 "2.2mF" H 3742 2705 50  0000 L CNN
 F 2 "" H 3650 2750 50  0001 C CNN
 F 3 "~" H 3650 2750 50  0001 C CNN
@@ -278,15 +279,10 @@ F 3 "~" H 4150 2250 50  0001 C CNN
 	1    4150 2250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L batteryless_gaming_device-rescue:MSP430FR5994 U?
-U 1 1 61ABD78E
-P 7900 1150
-F 0 "U?" H 7925 1317 50  0000 C CNN
-F 1 "MSP430FR5994" H 7925 1226 50  0000 C CNN
-F 2 "" V 7000 950 354 0001 C CNN
-F 3 "" V 7000 950 354 0001 C CNN
-	1    7900 1150
-	1    0    0    -1  
-$EndComp
+$Sheet
+S 6650 2450 1900 3100
+U 61926AE2
+F0 "Microcontroller" 50
+F1 "micro_msp430fr5994.sch" 50
+$EndSheet
 $EndSCHEMATC
