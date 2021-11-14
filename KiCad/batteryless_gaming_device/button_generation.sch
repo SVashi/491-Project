@@ -1,0 +1,403 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L batteryless_gaming_device-rescue:EH_switch SW?
+U 1 1 61A3608F
+P 3600 6450
+F 0 "SW?" H 3600 6909 50  0000 C CNN
+F 1 "EH_switch" H 3600 6818 50  0000 C CNN
+F 2 "" H 3800 6150 50  0001 C CNN
+F 3 "" H 3600 6450 50  0001 C CNN
+F 4 "CH721-ND;EG5982-ND" H 3600 6735 39  0000 C CNN "Digikey PN"
+	1    3600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 61A43A75
+P 4800 6200
+F 0 "D?" H 5144 6246 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5144 6155 50  0000 L CNN
+F 2 "" H 4800 6200 50  0001 C CNN
+F 3 "~" H 4800 6200 50  0001 C CNN
+	1    4800 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6250 3200 6250
+Wire Wire Line
+	3200 6250 3200 5850
+Wire Wire Line
+	3200 5850 4800 5850
+Wire Wire Line
+	4800 5850 4800 5900
+Wire Wire Line
+	3800 6250 4300 6250
+Wire Wire Line
+	4300 6250 4300 6650
+Wire Wire Line
+	4300 6650 4800 6650
+Wire Wire Line
+	4800 6650 4800 6500
+$Comp
+L power:GND #PWR?
+U 1 1 61A46511
+P 4450 6350
+F 0 "#PWR?" H 4450 6100 50  0001 C CNN
+F 1 "GND" H 4455 6177 50  0000 C CNN
+F 2 "" H 4450 6350 50  0001 C CNN
+F 3 "" H 4450 6350 50  0001 C CNN
+	1    4450 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6350 4450 6200
+Wire Wire Line
+	4450 6200 4500 6200
+$Comp
+L Device:R_US R?
+U 1 1 61A486D7
+P 3300 6750
+F 0 "R?" H 3368 6796 50  0000 L CNN
+F 1 "1M" H 3368 6705 50  0000 L CNN
+F 2 "" V 3340 6740 50  0001 C CNN
+F 3 "~" H 3300 6750 50  0001 C CNN
+	1    3300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6600 3300 6500
+Wire Wire Line
+	3300 6500 3400 6500
+Wire Wire Line
+	3300 6500 3300 6400
+Wire Wire Line
+	3300 6400 3400 6400
+Connection ~ 3300 6500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A50806
+P 3300 6950
+F 0 "#PWR?" H 3300 6800 50  0001 C CNN
+F 1 "+3.3V" H 3315 7123 50  0000 C CNN
+F 2 "" H 3300 6950 50  0001 C CNN
+F 3 "" H 3300 6950 50  0001 C CNN
+	1    3300 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 6500 3100 6500
+Text HLabel 3100 6500 0    50   Output ~ 0
+GPIO1
+Text HLabel 7100 3650 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	3300 6950 3300 6900
+$Comp
+L batteryless_gaming_device-rescue:EH_switch SW?
+U 1 1 61A58E70
+P 3600 4900
+F 0 "SW?" H 3600 5359 50  0000 C CNN
+F 1 "EH_switch" H 3600 5268 50  0000 C CNN
+F 2 "" H 3800 4600 50  0001 C CNN
+F 3 "" H 3600 4900 50  0001 C CNN
+F 4 "CH721-ND;EG5982-ND" H 3600 5185 39  0000 C CNN "Digikey PN"
+	1    3600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 61A58E76
+P 4800 4650
+F 0 "D?" H 5144 4696 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5144 4605 50  0000 L CNN
+F 2 "" H 4800 4650 50  0001 C CNN
+F 3 "~" H 4800 4650 50  0001 C CNN
+	1    4800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4700 3200 4700
+Wire Wire Line
+	3200 4700 3200 4300
+Wire Wire Line
+	3200 4300 4800 4300
+Wire Wire Line
+	4800 4300 4800 4350
+Wire Wire Line
+	3800 4700 4300 4700
+Wire Wire Line
+	4300 4700 4300 5100
+Wire Wire Line
+	4300 5100 4800 5100
+Wire Wire Line
+	4800 5100 4800 4950
+$Comp
+L power:GND #PWR?
+U 1 1 61A58E84
+P 4450 4800
+F 0 "#PWR?" H 4450 4550 50  0001 C CNN
+F 1 "GND" H 4455 4627 50  0000 C CNN
+F 2 "" H 4450 4800 50  0001 C CNN
+F 3 "" H 4450 4800 50  0001 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4800 4450 4650
+Wire Wire Line
+	4450 4650 4500 4650
+$Comp
+L Device:R_US R?
+U 1 1 61A58E8C
+P 3300 5200
+F 0 "R?" H 3368 5246 50  0000 L CNN
+F 1 "1M" H 3368 5155 50  0000 L CNN
+F 2 "" V 3340 5190 50  0001 C CNN
+F 3 "~" H 3300 5200 50  0001 C CNN
+	1    3300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5050 3300 4950
+Wire Wire Line
+	3300 4950 3400 4950
+Wire Wire Line
+	3300 4950 3300 4850
+Wire Wire Line
+	3300 4850 3400 4850
+Connection ~ 3300 4950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A58E97
+P 3300 5400
+F 0 "#PWR?" H 3300 5250 50  0001 C CNN
+F 1 "+3.3V" H 3315 5573 50  0000 C CNN
+F 2 "" H 3300 5400 50  0001 C CNN
+F 3 "" H 3300 5400 50  0001 C CNN
+	1    3300 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 4950 3100 4950
+Text HLabel 3100 4950 0    50   Output ~ 0
+GPIO2
+Wire Wire Line
+	3300 5400 3300 5350
+$Comp
+L batteryless_gaming_device-rescue:EH_switch SW?
+U 1 1 61A5B26C
+P 3600 3500
+F 0 "SW?" H 3600 3959 50  0000 C CNN
+F 1 "EH_switch" H 3600 3868 50  0000 C CNN
+F 2 "" H 3800 3200 50  0001 C CNN
+F 3 "" H 3600 3500 50  0001 C CNN
+F 4 "CH721-ND;EG5982-ND" H 3600 3785 39  0000 C CNN "Digikey PN"
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 61A5B272
+P 4800 3250
+F 0 "D?" H 5144 3296 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5144 3205 50  0000 L CNN
+F 2 "" H 4800 3250 50  0001 C CNN
+F 3 "~" H 4800 3250 50  0001 C CNN
+	1    4800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3300 3200 3300
+Wire Wire Line
+	3200 3300 3200 2900
+Wire Wire Line
+	3200 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 2950
+Wire Wire Line
+	3800 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 3700
+Wire Wire Line
+	4300 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 3550
+$Comp
+L power:GND #PWR?
+U 1 1 61A5B280
+P 4450 3400
+F 0 "#PWR?" H 4450 3150 50  0001 C CNN
+F 1 "GND" H 4455 3227 50  0000 C CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3400 4450 3250
+Wire Wire Line
+	4450 3250 4500 3250
+$Comp
+L Device:R_US R?
+U 1 1 61A5B288
+P 3300 3800
+F 0 "R?" H 3368 3846 50  0000 L CNN
+F 1 "1M" H 3368 3755 50  0000 L CNN
+F 2 "" V 3340 3790 50  0001 C CNN
+F 3 "~" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3650 3300 3550
+Wire Wire Line
+	3300 3550 3400 3550
+Wire Wire Line
+	3300 3550 3300 3450
+Wire Wire Line
+	3300 3450 3400 3450
+Connection ~ 3300 3550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A5B293
+P 3300 4000
+F 0 "#PWR?" H 3300 3850 50  0001 C CNN
+F 1 "+3.3V" H 3315 4173 50  0000 C CNN
+F 2 "" H 3300 4000 50  0001 C CNN
+F 3 "" H 3300 4000 50  0001 C CNN
+	1    3300 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 3550 3100 3550
+Text HLabel 3100 3550 0    50   Output ~ 0
+GPIO3
+Wire Wire Line
+	3300 4000 3300 3950
+$Comp
+L batteryless_gaming_device-rescue:EH_switch SW?
+U 1 1 61A5E757
+P 3600 2100
+F 0 "SW?" H 3600 2559 50  0000 C CNN
+F 1 "EH_switch" H 3600 2468 50  0000 C CNN
+F 2 "" H 3800 1800 50  0001 C CNN
+F 3 "" H 3600 2100 50  0001 C CNN
+F 4 "CH721-ND;EG5982-ND" H 3600 2385 39  0000 C CNN "Digikey PN"
+	1    3600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 61A5E75D
+P 4800 1850
+F 0 "D?" H 5144 1896 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5144 1805 50  0000 L CNN
+F 2 "" H 4800 1850 50  0001 C CNN
+F 3 "~" H 4800 1850 50  0001 C CNN
+	1    4800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1900 3200 1900
+Wire Wire Line
+	3200 1900 3200 1500
+Wire Wire Line
+	3200 1500 4800 1500
+Wire Wire Line
+	4800 1500 4800 1550
+Wire Wire Line
+	3800 1900 4300 1900
+Wire Wire Line
+	4300 1900 4300 2300
+Wire Wire Line
+	4300 2300 4800 2300
+Wire Wire Line
+	4800 2300 4800 2150
+$Comp
+L power:GND #PWR?
+U 1 1 61A5E76B
+P 4450 2000
+F 0 "#PWR?" H 4450 1750 50  0001 C CNN
+F 1 "GND" H 4455 1827 50  0000 C CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 "" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2000 4450 1850
+Wire Wire Line
+	4450 1850 4500 1850
+$Comp
+L Device:R_US R?
+U 1 1 61A5E773
+P 3300 2400
+F 0 "R?" H 3368 2446 50  0000 L CNN
+F 1 "1M" H 3368 2355 50  0000 L CNN
+F 2 "" V 3340 2390 50  0001 C CNN
+F 3 "~" H 3300 2400 50  0001 C CNN
+	1    3300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2250 3300 2150
+Wire Wire Line
+	3300 2150 3400 2150
+Wire Wire Line
+	3300 2150 3300 2050
+Wire Wire Line
+	3300 2050 3400 2050
+Connection ~ 3300 2150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A5E77E
+P 3300 2600
+F 0 "#PWR?" H 3300 2450 50  0001 C CNN
+F 1 "+3.3V" H 3315 2773 50  0000 C CNN
+F 2 "" H 3300 2600 50  0001 C CNN
+F 3 "" H 3300 2600 50  0001 C CNN
+	1    3300 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2150 3100 2150
+Text HLabel 3100 2150 0    50   Output ~ 0
+GPIO4
+Wire Wire Line
+	3300 2600 3300 2550
+Wire Wire Line
+	5100 1850 6550 1850
+Wire Wire Line
+	6550 1850 6550 3250
+Wire Wire Line
+	6550 3650 7100 3650
+Wire Wire Line
+	5100 3250 6550 3250
+Connection ~ 6550 3250
+Wire Wire Line
+	6550 3250 6550 3650
+Wire Wire Line
+	5100 4650 6550 4650
+Wire Wire Line
+	6550 4650 6550 3650
+Connection ~ 6550 3650
+Wire Wire Line
+	5100 6200 6550 6200
+Wire Wire Line
+	6550 6200 6550 4650
+Connection ~ 6550 4650
+$EndSCHEMATC
