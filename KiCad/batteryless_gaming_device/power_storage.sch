@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -32,28 +32,6 @@ Wire Wire Line
 	5850 2950 6100 2950
 Wire Wire Line
 	5850 2900 5850 2950
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199CF65
-P 5650 2950
-F 0 "R?" H 5718 2996 50  0000 L CNN
-F 1 "10M" H 5718 2905 50  0000 L CNN
-F 2 "" H 5650 2950 50  0001 C CNN
-F 3 "~" H 5650 2950 50  0001 C CNN
-	1    5650 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199CF6B
-P 5850 2800
-F 0 "R?" H 5918 2846 50  0000 L CNN
-F 1 "10M" H 5918 2755 50  0000 L CNN
-F 2 "" H 5850 2800 50  0001 C CNN
-F 3 "~" H 5850 2800 50  0001 C CNN
-	1    5850 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 3950 4500 3900
 Wire Wire Line
@@ -80,28 +58,6 @@ Wire Wire Line
 	4850 3700 4850 3300
 Wire Wire Line
 	4850 3900 4850 3950
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199CF7F
-P 4500 3800
-F 0 "R?" H 4568 3846 50  0000 L CNN
-F 1 "4.32M" H 4568 3755 50  0000 L CNN
-F 2 "" H 4500 3800 50  0001 C CNN
-F 3 "~" H 4500 3800 50  0001 C CNN
-	1    4500 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199CF85
-P 4850 3800
-F 0 "R?" H 4918 3846 50  0000 L CNN
-F 1 "1.67M" H 4918 3755 50  0000 L CNN
-F 2 "" H 4850 3800 50  0001 C CNN
-F 3 "~" H 4850 3800 50  0001 C CNN
-	1    4850 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 3700 6100 3700
 Connection ~ 5250 3900
@@ -119,19 +75,6 @@ Wire Wire Line
 	5250 3900 5250 3950
 Wire Wire Line
 	5100 2650 5850 2650
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199CF94
-P 5250 3800
-AR Path="/6199CF94" Ref="R?"  Part="1" 
-AR Path="/61991596/6199CF94" Ref="R?"  Part="1" 
-F 0 "R?" H 5318 3846 50  0000 L CNN
-F 1 "1.3M" H 5318 3755 50  0000 L CNN
-F 2 "" H 5250 3800 50  0001 C CNN
-F 3 "~" H 5250 3800 50  0001 C CNN
-	1    5250 3800
-	1    0    0    -1  
-$EndComp
 Connection ~ 6300 2600
 Wire Wire Line
 	6250 2600 6300 2600
@@ -148,17 +91,6 @@ F 1 "GND" H 5105 2827 50  0000 C CNN
 F 2 "" H 5100 3000 50  0001 C CNN
 F 3 "" H 5100 3000 50  0001 C CNN
 	1    5100 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6199CFA4
-P 5100 2800
-F 0 "C?" H 5192 2846 50  0000 L CNN
-F 1 "4.7u" H 5192 2755 50  0000 L CNN
-F 2 "" H 5100 2800 50  0001 C CNN
-F 3 "~" H 5100 2800 50  0001 C CNN
-	1    5100 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -197,37 +129,10 @@ Wire Wire Line
 	7100 2450 7400 2450
 Wire Wire Line
 	7100 2700 7100 2450
-$Comp
-L Device:CP1_Small C?
-U 1 1 6199CFBC
-P 7400 2600
-F 0 "C?" H 7491 2646 50  0000 L CNN
-F 1 "220m" H 7491 2555 50  0000 L CNN
-F 2 "" H 7400 2600 50  0001 C CNN
-F 3 "~" H 7400 2600 50  0001 C CNN
-	1    7400 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 4450 6500 4300
 Wire Wire Line
 	6900 4450 6900 4300
-Connection ~ 7850 3800
-Wire Wire Line
-	7950 3800 7950 3750
-Wire Wire Line
-	7850 3800 7950 3800
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6199CFC7
-P 7950 3750
-F 0 "#PWR?" H 7950 3600 50  0001 C CNN
-F 1 "+3.3V" H 7965 3923 50  0000 C CNN
-F 2 "" H 7950 3750 50  0001 C CNN
-F 3 "" H 7950 3750 50  0001 C CNN
-	1    7950 3750
-	1    0    0    -1  
-$EndComp
 Connection ~ 7650 4150
 Wire Wire Line
 	7850 4150 7850 4050
@@ -253,48 +158,14 @@ Wire Wire Line
 Wire Wire Line
 	7450 3850 7450 3800
 Connection ~ 7450 3800
-$Comp
-L Device:C_Small C?
-U 1 1 6199CFDB
-P 7850 3950
-F 0 "C?" H 7942 3996 50  0000 L CNN
-F 1 "0.1u" H 7942 3905 50  0000 L CNN
-F 2 "" H 7850 3950 50  0001 C CNN
-F 3 "~" H 7850 3950 50  0001 C CNN
-	1    7850 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6199CFE1
-P 7450 3950
-F 0 "C?" H 7542 3996 50  0000 L CNN
-F 1 "10u" H 7542 3905 50  0000 L CNN
-F 2 "" H 7450 3950 50  0001 C CNN
-F 3 "~" H 7450 3950 50  0001 C CNN
-	1    7450 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 2600 6400 2600
 Wire Wire Line
 	6300 2600 6300 2700
-NoConn ~ 7300 3200
 Wire Wire Line
 	6800 2600 6800 2700
 Wire Wire Line
 	6700 2600 6800 2600
-$Comp
-L Device:L L?
-U 1 1 6199CFEC
-P 6550 2600
-F 0 "L?" V 6740 2600 50  0000 C CNN
-F 1 "22u" V 6649 2600 50  0000 C CNN
-F 2 "" H 6550 2600 50  0001 C CNN
-F 3 "~" H 6550 2600 50  0001 C CNN
-	1    6550 2600
-	0    -1   -1   0   
-$EndComp
 Connection ~ 6700 4450
 Wire Wire Line
 	6700 4450 6900 4450
@@ -317,19 +188,6 @@ Wire Wire Line
 Connection ~ 4750 2950
 Wire Wire Line
 	4350 2950 4750 2950
-$Comp
-L Device:CP1_Small C?
-U 1 1 6199CFFF
-P 4750 2800
-AR Path="/6199CFFF" Ref="C?"  Part="1" 
-AR Path="/61991596/6199CFFF" Ref="C?"  Part="1" 
-F 0 "C?" H 4841 2846 50  0000 L CNN
-F 1 "47u" H 4841 2755 50  0000 L CNN
-F 2 "" H 4750 2800 50  0001 C CNN
-F 3 "~" H 4750 2800 50  0001 C CNN
-	1    4750 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 2650 4750 2700
 Wire Wire Line
@@ -341,43 +199,6 @@ Connection ~ 4850 3950
 Connection ~ 4500 3950
 Wire Wire Line
 	7450 3800 7850 3800
-$Comp
-L Device:C_Small C?
-U 1 1 6199D00D
-P 5750 4200
-F 0 "C?" H 5842 4246 50  0000 L CNN
-F 1 "0.01u" H 5842 4155 50  0000 L CNN
-F 2 "" H 5750 4200 50  0001 C CNN
-F 3 "~" H 5750 4200 50  0001 C CNN
-	1    5750 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199D013
-P 5250 4300
-AR Path="/6199D013" Ref="R?"  Part="1" 
-AR Path="/61991596/6199D013" Ref="R?"  Part="1" 
-F 0 "R?" H 5318 4346 50  0000 L CNN
-F 1 "6.2M" H 5318 4255 50  0000 L CNN
-F 2 "" H 5250 4300 50  0001 C CNN
-F 3 "~" H 5250 4300 50  0001 C CNN
-	1    5250 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199D019
-P 5250 4050
-AR Path="/6199D019" Ref="R?"  Part="1" 
-AR Path="/61991596/6199D019" Ref="R?"  Part="1" 
-F 0 "R?" H 5318 4096 50  0000 L CNN
-F 1 "2.7M" H 5318 4005 50  0000 L CNN
-F 2 "" H 5250 4050 50  0001 C CNN
-F 3 "~" H 5250 4050 50  0001 C CNN
-	1    5250 4050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6199D01F
@@ -411,32 +232,6 @@ F 3 "" H 5750 4450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 4300 5750 4450
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199D031
-P 4850 4100
-AR Path="/6199D031" Ref="R?"  Part="1" 
-AR Path="/61991596/6199D031" Ref="R?"  Part="1" 
-F 0 "R?" H 4918 4146 50  0000 L CNN
-F 1 "8.25M" H 4918 4055 50  0000 L CNN
-F 2 "" H 4850 4100 50  0001 C CNN
-F 3 "~" H 4850 4100 50  0001 C CNN
-	1    4850 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 6199D037
-P 4500 4100
-AR Path="/6199D037" Ref="R?"  Part="1" 
-AR Path="/61991596/6199D037" Ref="R?"  Part="1" 
-F 0 "R?" H 4568 4146 50  0000 L CNN
-F 1 "5.6M" H 4568 4055 50  0000 L CNN
-F 2 "" H 4500 4100 50  0001 C CNN
-F 3 "~" H 4500 4100 50  0001 C CNN
-	1    4500 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 4000 4500 3950
 $Comp
@@ -501,4 +296,205 @@ Wire Wire Line
 Connection ~ 3800 3000
 Wire Wire Line
 	6700 4300 6700 4450
+Text HLabel 2550 2650 0    50   Input ~ 0
+Vin
+Text HLabel 8400 3800 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	7850 3800 8400 3800
+Connection ~ 7850 3800
+$Comp
+L Device:C_Small C?
+U 1 1 6199D00D
+P 5750 4200
+F 0 "C?" H 5842 4246 50  0000 L CNN
+F 1 "0.01uF" H 5842 4155 50  0000 L CNN
+F 2 "" H 5750 4200 50  0001 C CNN
+F 3 "~" H 5750 4200 50  0001 C CNN
+	1    5750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199D013
+P 5250 4300
+AR Path="/6199D013" Ref="R?"  Part="1" 
+AR Path="/61991596/6199D013" Ref="R?"  Part="1" 
+F 0 "R?" H 5318 4346 50  0000 L CNN
+F 1 "6.98M" H 5318 4255 50  0000 L CNN
+F 2 "" H 5250 4300 50  0001 C CNN
+F 3 "~" H 5250 4300 50  0001 C CNN
+	1    5250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199D019
+P 5250 4050
+AR Path="/6199D019" Ref="R?"  Part="1" 
+AR Path="/61991596/6199D019" Ref="R?"  Part="1" 
+F 0 "R?" H 5318 4096 50  0000 L CNN
+F 1 "1.4M" H 5318 4005 50  0000 L CNN
+F 2 "" H 5250 4050 50  0001 C CNN
+F 3 "~" H 5250 4050 50  0001 C CNN
+	1    5250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199CF94
+P 5250 3800
+AR Path="/6199CF94" Ref="R?"  Part="1" 
+AR Path="/61991596/6199CF94" Ref="R?"  Part="1" 
+F 0 "R?" H 5318 3846 50  0000 L CNN
+F 1 "1.69M" H 5318 3755 50  0000 L CNN
+F 2 "" H 5250 3800 50  0001 C CNN
+F 3 "~" H 5250 3800 50  0001 C CNN
+	1    5250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199CF85
+P 4850 3800
+F 0 "R?" H 4918 3846 50  0000 L CNN
+F 1 "0.39M" H 4918 3755 50  0000 L CNN
+F 2 "" H 4850 3800 50  0001 C CNN
+F 3 "~" H 4850 3800 50  0001 C CNN
+	1    4850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199D031
+P 4850 4100
+AR Path="/6199D031" Ref="R?"  Part="1" 
+AR Path="/61991596/6199D031" Ref="R?"  Part="1" 
+F 0 "R?" H 4918 4146 50  0000 L CNN
+F 1 "9.76M" H 4918 4055 50  0000 L CNN
+F 2 "" H 4850 4100 50  0001 C CNN
+F 3 "~" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199D037
+P 4500 4100
+AR Path="/6199D037" Ref="R?"  Part="1" 
+AR Path="/61991596/6199D037" Ref="R?"  Part="1" 
+F 0 "R?" H 4568 4146 50  0000 L CNN
+F 1 "4.53M" H 4568 4055 50  0000 L CNN
+F 2 "" H 4500 4100 50  0001 C CNN
+F 3 "~" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199CF7F
+P 4500 3800
+F 0 "R?" H 4568 3846 50  0000 L CNN
+F 1 "5.62M" H 4568 3755 50  0000 L CNN
+F 2 "" H 4500 3800 50  0001 C CNN
+F 3 "~" H 4500 3800 50  0001 C CNN
+	1    4500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6199CFDB
+P 7850 3950
+F 0 "C?" H 7942 3996 50  0000 L CNN
+F 1 "0.1uF" H 7942 3905 50  0000 L CNN
+F 2 "" H 7850 3950 50  0001 C CNN
+F 3 "~" H 7850 3950 50  0001 C CNN
+	1    7850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6199CFE1
+P 7450 3950
+F 0 "C?" H 7542 3996 50  0000 L CNN
+F 1 "10uF" H 7542 3905 50  0000 L CNN
+F 2 "" H 7450 3950 50  0001 C CNN
+F 3 "~" H 7450 3950 50  0001 C CNN
+	1    7450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199CF65
+P 5650 2950
+F 0 "R?" V 5750 2900 50  0000 L CNN
+F 1 "10M" V 5850 2850 50  0000 L CNN
+F 2 "" H 5650 2950 50  0001 C CNN
+F 3 "~" H 5650 2950 50  0001 C CNN
+	1    5650 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6199CF6B
+P 5850 2800
+F 0 "R?" H 5918 2846 50  0000 L CNN
+F 1 "10M" H 5918 2755 50  0000 L CNN
+F 2 "" H 5850 2800 50  0001 C CNN
+F 3 "~" H 5850 2800 50  0001 C CNN
+	1    5850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6199CFEC
+P 6550 2600
+F 0 "L?" V 6740 2600 50  0000 C CNN
+F 1 "22u" V 6649 2600 50  0000 C CNN
+F 2 "" H 6550 2600 50  0001 C CNN
+F 3 "~" H 6550 2600 50  0001 C CNN
+	1    6550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6199CFA4
+P 5100 2800
+F 0 "C?" H 5192 2846 50  0000 L CNN
+F 1 "4.7u" H 5192 2755 50  0000 L CNN
+F 2 "" H 5100 2800 50  0001 C CNN
+F 3 "~" H 5100 2800 50  0001 C CNN
+	1    5100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 6199CFBC
+P 7400 2600
+F 0 "C?" H 7491 2646 50  0000 L CNN
+F 1 "220mF" H 7491 2555 50  0000 L CNN
+F 2 "" H 7400 2600 50  0001 C CNN
+F 3 "~" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 6199CFFF
+P 4750 2800
+AR Path="/6199CFFF" Ref="C?"  Part="1" 
+AR Path="/61991596/6199CFFF" Ref="C?"  Part="1" 
+F 0 "C?" H 4841 2846 50  0000 L CNN
+F 1 "47u" H 4841 2755 50  0000 L CNN
+F 2 "" H 4750 2800 50  0001 C CNN
+F 3 "~" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 3550 4000 0    50   ~ 0
+VBAT_OV=4.2V\nVBAT_UV=1.3V\n\nVBAT_OK=1.5V\nVBAT_OK_HYST=1.8V\n
+Text HLabel 7700 3200 2    50   Output ~ 0
+VBAT_OK
+Wire Wire Line
+	7300 3200 7700 3200
 $EndSCHEMATC

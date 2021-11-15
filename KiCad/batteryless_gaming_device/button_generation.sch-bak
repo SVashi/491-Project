@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -101,7 +101,7 @@ $EndComp
 Wire Wire Line
 	3300 6500 3100 6500
 Text HLabel 3100 6500 0    50   Output ~ 0
-GPIO1
+Button1
 Text HLabel 7100 3650 2    50   Output ~ 0
 Vout
 Wire Wire Line
@@ -194,7 +194,7 @@ $EndComp
 Wire Wire Line
 	3300 4950 3100 4950
 Text HLabel 3100 4950 0    50   Output ~ 0
-GPIO2
+Button2
 Wire Wire Line
 	3300 5400 3300 5350
 $Comp
@@ -285,7 +285,7 @@ $EndComp
 Wire Wire Line
 	3300 3550 3100 3550
 Text HLabel 3100 3550 0    50   Output ~ 0
-GPIO3
+Button3
 Wire Wire Line
 	3300 4000 3300 3950
 $Comp
@@ -376,7 +376,7 @@ $EndComp
 Wire Wire Line
 	3300 2150 3100 2150
 Text HLabel 3100 2150 0    50   Output ~ 0
-GPIO4
+Button4
 Wire Wire Line
 	3300 2600 3300 2550
 Wire Wire Line

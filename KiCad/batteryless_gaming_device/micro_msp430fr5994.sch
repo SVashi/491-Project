@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 5 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -522,4 +522,38 @@ Wire Notes Line
 	6850 5150 9350 5150
 Text Notes 6950 5300 0    79   ~ 0
 Programming Interface
+Text HLabel 1250 1500 0    50   Input ~ 0
+Button1
+Text HLabel 1250 1600 0    50   Input ~ 0
+Button2
+Text HLabel 1250 1700 0    50   Input ~ 0
+Button3
+Text HLabel 1250 1800 0    50   Input ~ 0
+Button4
+Wire Notes Line
+	1750 2050 1750 1000
+Wire Notes Line
+	1750 1000 750  1000
+Wire Notes Line
+	750  1000 750  2050
+Text Notes 800  1400 0    79   ~ 0
+Energy\nHarvesting\nGPIO/Analog In
+Text HLabel 1450 1950 0    50   Input ~ 0
+GeneratorVcc
+Wire Notes Line
+	1750 3900 1750 2850
+Wire Notes Line
+	1750 2850 750  2850
+Wire Notes Line
+	750  2850 750  3900
+Text Notes 800  3250 0    79   ~ 0
+Energy\nHarvesting\nGPIO/Analog In
+Wire Notes Line
+	750  2050 1750 2050
+Wire Notes Line
+	750  3900 1750 3900
+Text HLabel 1250 3600 0    50   Input ~ 0
+VBAT_OK
+Text Notes 850  3750 0    50   ~ 0
+possibly add mosfet to switch 3.3V logic
 $EndSCHEMATC

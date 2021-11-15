@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Battery Free Gaming Device"
 Date ""
 Rev "Rev 0"
@@ -14,397 +14,207 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2800 3600 1650 1100
+S 3050 3600 1650 1100
 U 61991596
 F0 "Power Storage" 50
 F1 "power_storage.sch" 50
+F2 "Vin" I L 3050 3850 50 
+F3 "Vout" O R 4700 3850 50 
+F4 "VBAT_OK" O R 4700 4500 50 
 $EndSheet
 Wire Notes Line
-	3650 4450 3650 4250
+	3900 4450 3900 4250
 Wire Notes Line
-	3650 4150 3650 3950
+	3900 4150 3900 3950
 Wire Notes Line
-	3450 4150 3850 4150
+	3700 4150 4100 4150
 Wire Notes Line
-	3450 4250 3850 4250
+	3700 4250 4100 4250
+Wire Notes Line
+	4000 3950 4000 3850
+Wire Notes Line
+	4000 3850 4250 3850
+Wire Notes Line
+	4250 3850 4200 3800
+Wire Notes Line
+	4250 3850 4200 3900
+Wire Notes Line
+	3800 4450 3900 4550
+Wire Notes Line
+	3900 4550 4000 4450
+Wire Notes Line
+	3800 4450 4000 4450
 Wire Notes Line
 	3750 3950 3750 3850
 Wire Notes Line
-	3750 3850 4000 3850
+	3750 3850 3500 3850
 Wire Notes Line
-	4000 3850 3950 3800
+	3750 3950 3700 3900
 Wire Notes Line
-	4000 3850 3950 3900
+	3750 3950 3800 3900
 Wire Notes Line
-	3550 4450 3650 4550
+	2200 3100 2200 2850
 Wire Notes Line
-	3650 4550 3750 4450
+	2200 3050 2250 3050
 Wire Notes Line
-	3550 4450 3750 4450
+	2250 3050 2350 3150
 Wire Notes Line
-	3500 3950 3500 3850
+	2350 3150 2350 3200
 Wire Notes Line
-	3500 3850 3250 3850
+	2350 3200 2300 3200
 Wire Notes Line
-	3500 3950 3450 3900
+	2300 3200 2300 3150
 Wire Notes Line
-	3500 3950 3550 3900
+	2300 3150 2250 3100
 Wire Notes Line
-	1950 3550 1950 3300
+	1650 2850 1650 2750
 Wire Notes Line
-	1950 3500 2000 3500
+	1500 3050 1450 3050
 Wire Notes Line
-	2000 3500 2100 3600
+	1450 3050 1350 3150
 Wire Notes Line
-	2100 3600 2100 3650
+	1350 3150 1350 3200
 Wire Notes Line
-	2100 3650 2050 3650
+	1350 3200 1400 3200
 Wire Notes Line
-	2050 3650 2050 3600
+	1400 3200 1400 3150
 Wire Notes Line
-	2050 3600 2000 3550
+	1400 3150 1450 3100
 Wire Notes Line
-	1400 3300 1400 3200
+	2250 3100 1450 3100
+Wire Notes Line
+	1500 3100 1500 2850
+Wire Notes Line
+	2050 2850 2050 2750
+Wire Notes Line
+	2050 2750 1650 2750
+Wire Notes Line
+	1500 2850 2200 2850
+Wire Notes Line
+	1600 4650 2250 4650
+Wire Notes Line
+	2250 4650 2250 4250
+Wire Notes Line
+	2250 4250 1600 4250
+Wire Notes Line
+	1600 4250 1600 4650
+Wire Notes Line
+	1750 4300 1650 4400
+Wire Notes Line
+	1750 4500 1850 4400
+Wire Notes Line
+	1500 4050 1400 4150
+Wire Notes Line
+	1500 4050 1850 4400
+Wire Notes Line
+	1400 4150 1750 4500
 $Sheet
-S 1050 3000 1250 950 
-U 619E7D55
-F0 "Button Generation" 50
-F1 "button_generation.sch" 50
-F2 "GPIO1" O R 2300 3100 50 
-F3 "Vout" O R 2300 3750 50 
-F4 "GPIO2" O R 2300 3200 50 
-F5 "GPIO3" O R 2300 3300 50 
-F6 "GPIO4" O R 2300 3400 50 
-$EndSheet
-Wire Notes Line
-	1250 3500 1200 3500
-Wire Notes Line
-	1200 3500 1100 3600
-Wire Notes Line
-	1100 3600 1100 3650
-Wire Notes Line
-	1100 3650 1150 3650
-Wire Notes Line
-	1150 3650 1150 3600
-Wire Notes Line
-	1150 3600 1200 3550
-Wire Notes Line
-	2000 3550 1200 3550
-Wire Notes Line
-	1250 3550 1250 3300
-Wire Notes Line
-	1800 3300 1800 3200
-Wire Notes Line
-	1800 3200 1400 3200
-Wire Notes Line
-	1250 3300 1950 3300
-Wire Notes Line
-	1350 5100 2000 5100
-Wire Notes Line
-	2000 5100 2000 4700
-Wire Notes Line
-	2000 4700 1350 4700
-Wire Notes Line
-	1350 4700 1350 5100
-Wire Notes Line
-	1500 4750 1400 4850
-Wire Notes Line
-	1500 4950 1600 4850
-Wire Notes Line
-	1250 4500 1150 4600
-Wire Notes Line
-	1250 4500 1600 4850
-Wire Notes Line
-	1150 4600 1500 4950
-$Sheet
-S 1050 4400 1250 950 
+S 1300 3950 1300 950 
 U 619A7303
 F0 "Hand Crank" 50
 F1 "hand_crank_generator.sch" 50
-F2 "Vout" O R 2300 4650 50 
-F3 "generator_voltage" O R 2300 5200 50 
+F2 "Vout" O R 2600 4200 50 
+F3 "generator_voltage" O R 2600 4750 50 
 $EndSheet
 $Sheet
-S 8250 2500 1900 3100
+S 6600 2450 1900 3100
 U 61926AE2
 F0 "Microcontroller" 50
 F1 "micro_msp430fr5994.sch" 50
+F2 "Button1" I L 6600 2650 50 
+F3 "Button2" I L 6600 2750 50 
+F4 "Button3" I L 6600 2850 50 
+F5 "Button4" I L 6600 2950 50 
+F6 "GeneratorVcc" I L 6600 5100 50 
+F7 "VBAT_OK" I L 6600 4950 50 
 $EndSheet
-$Comp
-L Regulator_Switching:TPS61201DRC U?
-U 1 1 6199ED82
-P 5800 3900
-F 0 "U?" H 5800 4367 50  0000 C CNN
-F 1 "TPS61201DRC" H 5800 4276 50  0000 C CNN
-F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 5800 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps61200.pdf" H 5800 3900 50  0001 C CNN
-	1    5800 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 61919F7B
-P 5800 3350
-F 0 "L?" V 5990 3350 50  0000 C CNN
-F 1 "2.2u" V 5899 3350 50  0000 C CNN
-F 2 "" H 5800 3350 50  0001 C CNN
-F 3 "~" H 5800 3350 50  0001 C CNN
-	1    5800 3350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6191B0EE
-P 4650 3850
-F 0 "C?" H 4742 3896 50  0000 L CNN
-F 1 "10uF" H 4742 3805 50  0000 L CNN
-F 2 "" H 4650 3850 50  0001 C CNN
-F 3 "~" H 4650 3850 50  0001 C CNN
-	1    4650 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6191D39C
-P 5800 4500
-F 0 "#PWR?" H 5800 4250 50  0001 C CNN
-F 1 "GND" H 5805 4327 50  0000 C CNN
-F 2 "" H 5800 4500 50  0001 C CNN
-F 3 "" H 5800 4500 50  0001 C CNN
-	1    5800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6191F54B
-P 7400 3950
-F 0 "C?" H 7492 3996 50  0000 L CNN
-F 1 "10uF" H 7492 3905 50  0000 L CNN
-F 2 "" H 7400 3950 50  0001 C CNN
-F 3 "~" H 7400 3950 50  0001 C CNN
-	1    7400 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6192335B
-P 6350 4000
-F 0 "C?" H 6442 4046 50  0000 L CNN
-F 1 "1uF" H 6442 3955 50  0000 L CNN
-F 2 "" H 6350 4000 50  0001 C CNN
-F 3 "~" H 6350 4000 50  0001 C CNN
-	1    6350 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61923EAF
-P 6350 4150
-F 0 "#PWR?" H 6350 3900 50  0001 C CNN
-F 1 "GND" H 6355 3977 50  0000 C CNN
-F 2 "" H 6350 4150 50  0001 C CNN
-F 3 "" H 6350 4150 50  0001 C CNN
-	1    6350 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6350 4150 6350 4100
+	2600 3300 2850 3300
 Wire Wire Line
-	6350 3900 6200 3900
-$Comp
-L Device:C_Small C?
-U 1 1 619264DA
-P 7800 3950
-F 0 "C?" H 7892 3996 50  0000 L CNN
-F 1 "10uF" H 7892 3905 50  0000 L CNN
-F 2 "" H 7800 3950 50  0001 C CNN
-F 3 "~" H 7800 3950 50  0001 C CNN
-	1    7800 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 619278B4
-P 5000 3850
-F 0 "C?" H 5092 3896 50  0000 L CNN
-F 1 "0.1uF" H 5092 3805 50  0000 L CNN
-F 2 "" H 5000 3850 50  0001 C CNN
-F 3 "~" H 5000 3850 50  0001 C CNN
-	1    5000 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 61928AB0
-P 7000 3950
-F 0 "C?" H 7092 3996 50  0000 L CNN
-F 1 "0.1uF" H 7092 3905 50  0000 L CNN
-F 2 "" H 7000 3950 50  0001 C CNN
-F 3 "~" H 7000 3950 50  0001 C CNN
-	1    7000 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6192C619
-P 6650 4000
-F 0 "R?" H 6718 4046 50  0000 L CNN
-F 1 "R_US" H 6718 3955 50  0000 L CNN
-F 2 "" V 6690 3990 50  0001 C CNN
-F 3 "~" H 6650 4000 50  0001 C CNN
-	1    6650 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6192D958
-P 6650 4350
-F 0 "R?" H 6718 4396 50  0000 L CNN
-F 1 "R_US" H 6718 4305 50  0000 L CNN
-F 2 "" V 6690 4340 50  0001 C CNN
-F 3 "~" H 6650 4350 50  0001 C CNN
-	1    6650 4350
-	1    0    0    -1  
-$EndComp
+	2850 3850 3050 3850
 Wire Wire Line
-	5350 3700 5350 3800
+	2600 4200 2850 4200
 Wire Wire Line
-	5350 3800 5400 3800
-Connection ~ 5350 3700
+	2850 4200 2850 3850
+$Sheet
+S 5100 3350 1050 800 
+U 61941831
+F0 "Power Regulation" 50
+F1 "power_regulation.sch" 50
+F2 "Vin" I L 5100 3600 50 
+$EndSheet
 Wire Wire Line
-	5350 3700 5400 3700
+	4700 3850 4850 3850
 Wire Wire Line
-	5350 3800 5350 3900
+	4850 3850 4850 3600
 Wire Wire Line
-	5350 3900 5400 3900
-Connection ~ 5350 3800
+	4850 3600 5100 3600
+$Sheet
+S 1300 2550 1300 950 
+U 619E7D55
+F0 "Button Generation" 50
+F1 "button_generation.sch" 50
+F2 "Vout" O R 2600 3300 50 
+F3 "Button1" O R 2600 2650 50 
+F4 "Button2" O R 2600 2750 50 
+F5 "Button3" O R 2600 2850 50 
+F6 "Button4" O R 2600 2950 50 
+$EndSheet
+Connection ~ 2850 3850
 Wire Wire Line
-	5400 4000 5350 4000
+	2850 3300 2850 3850
+Wire Notes Line
+	5350 3800 5300 3850
+Wire Notes Line
+	5350 3800 5300 3750
+Wire Notes Line
+	5400 3500 5400 4050
+Wire Notes Line
+	5400 4050 5850 4050
+Wire Notes Line
+	5850 4050 5850 3500
+Wire Notes Line
+	5850 3500 5400 3500
+Wire Notes Line
+	5900 3800 6000 3800
+Wire Notes Line
+	6000 3800 6000 3700
+Wire Notes Line
+	6000 3700 5950 3750
+Wire Notes Line
+	6000 3700 6050 3750
+Text Notes 5850 3700 0    50   ~ 0
++3.3V
+Wire Notes Line
+	5200 3800 5350 3800
 Wire Wire Line
-	5350 4000 5350 3900
-Connection ~ 5350 3900
+	2600 2950 6600 2950
 Wire Wire Line
-	5250 3700 5250 3350
+	2600 2850 6600 2850
 Wire Wire Line
-	5250 3350 5650 3350
-Connection ~ 5250 3700
+	2600 2750 6600 2750
 Wire Wire Line
-	5250 3700 5350 3700
+	2600 2650 6600 2650
 Wire Wire Line
-	5950 3350 6300 3350
+	2600 4750 2850 4750
 Wire Wire Line
-	6300 3350 6300 3700
+	2850 4750 2850 5100
 Wire Wire Line
-	6300 3700 6200 3700
+	2850 5100 6600 5100
 Wire Wire Line
-	4650 3700 5000 3700
+	4700 4500 4900 4500
 Wire Wire Line
-	4650 3750 4650 3700
+	4900 4500 4900 4950
 Wire Wire Line
-	5000 3750 5000 3700
-Connection ~ 5000 3700
-Wire Wire Line
-	5000 3700 5250 3700
-Wire Wire Line
-	5700 4400 5700 4450
-Wire Wire Line
-	5700 4450 5800 4450
-Wire Wire Line
-	5800 4450 5800 4400
-Wire Wire Line
-	5800 4450 5900 4450
-Wire Wire Line
-	5900 4450 5900 4400
-Connection ~ 5800 4450
-Wire Wire Line
-	5800 4450 5800 4500
-$Comp
-L power:GND #PWR?
-U 1 1 61939A8D
-P 4850 4100
-F 0 "#PWR?" H 4850 3850 50  0001 C CNN
-F 1 "GND" H 4855 3927 50  0000 C CNN
-F 2 "" H 4850 4100 50  0001 C CNN
-F 3 "" H 4850 4100 50  0001 C CNN
-	1    4850 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 3950 4650 4050
-Wire Wire Line
-	5000 4050 5000 3950
-Wire Wire Line
-	4650 4050 4850 4050
-Wire Wire Line
-	4850 4100 4850 4050
-Connection ~ 4850 4050
-Wire Wire Line
-	4850 4050 5000 4050
-Wire Wire Line
-	7000 3800 7000 3850
-Wire Wire Line
-	7000 3800 7400 3800
-Wire Wire Line
-	7400 3800 7400 3850
-Connection ~ 7000 3800
-Wire Wire Line
-	7400 3800 7800 3800
-Wire Wire Line
-	7800 3800 7800 3850
-Connection ~ 7400 3800
-Wire Wire Line
-	7000 4050 7000 4100
-Wire Wire Line
-	7000 4100 7400 4100
-Wire Wire Line
-	7400 4100 7400 4050
-Wire Wire Line
-	7400 4100 7800 4100
-Wire Wire Line
-	7800 4100 7800 4050
-Connection ~ 7400 4100
-Wire Wire Line
-	7400 4100 7400 4150
-$Comp
-L power:GND #PWR?
-U 1 1 61944A54
-P 7400 4150
-F 0 "#PWR?" H 7400 3900 50  0001 C CNN
-F 1 "GND" H 7405 3977 50  0000 C CNN
-F 2 "" H 7400 4150 50  0001 C CNN
-F 3 "" H 7400 4150 50  0001 C CNN
-	1    7400 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3800 6650 3800
-Wire Wire Line
-	6650 3850 6650 3800
-Connection ~ 6650 3800
-Wire Wire Line
-	6650 3800 7000 3800
-Wire Wire Line
-	6650 4150 6650 4200
-$Comp
-L power:GND #PWR?
-U 1 1 6194D7CB
-P 6650 4550
-F 0 "#PWR?" H 6650 4300 50  0001 C CNN
-F 1 "GND" H 6655 4377 50  0000 C CNN
-F 2 "" H 6650 4550 50  0001 C CNN
-F 3 "" H 6650 4550 50  0001 C CNN
-	1    6650 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 4550 6650 4500
-Wire Wire Line
-	6650 4150 6550 4150
-Wire Wire Line
-	6550 4150 6550 4450
-Wire Wire Line
-	6550 4450 6200 4450
-Wire Wire Line
-	6200 4450 6200 4100
-Connection ~ 6650 4150
+	4900 4950 6600 4950
+Text Notes 7400 1750 0    79   ~ 0
+TODO:\nAdd 0 ohms everywhere\nAdd test points\nAdd mounting holes\nAdd E-ink display\nFootprints/bom spec\nFigure out buck converter\n3.3V program in protection
+Wire Notes Line
+	7200 650  7200 1950
+Wire Notes Line
+	7200 1950 9250 1950
+Wire Notes Line
+	9250 1950 9250 650 
+Wire Notes Line
+	7200 650  9250 650 
 $EndSCHEMATC
