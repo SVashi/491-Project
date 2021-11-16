@@ -28,10 +28,10 @@ F 4 "296-45560-1-ND" H 4350 1450 39  0000 C CNN "Digikey PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L Device:C C10
 U 1 1 6192E176
 P 5850 3750
-F 0 "C11" H 5965 3796 50  0000 L CNN
+F 0 "C10" H 5965 3796 50  0000 L CNN
 F 1 "0.1uF" H 5965 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5888 3600 50  0001 C CNN
 F 3 "~" H 5850 3750 50  0001 C CNN
@@ -341,10 +341,10 @@ Wire Wire Line
 Wire Wire Line
 	7900 3200 7900 3500
 $Comp
-L Device:C C14
+L Device:C C13
 U 1 1 619313AD
 P 7350 3750
-F 0 "C14" H 7465 3796 50  0000 L CNN
+F 0 "C13" H 7465 3796 50  0000 L CNN
 F 1 "0.1uF" H 7465 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7388 3600 50  0001 C CNN
 F 3 "~" H 7350 3750 50  0001 C CNN
@@ -353,10 +353,10 @@ F 4 "296-21684-1-ND" H 6300 4200 39  0000 C CNN "Digikey PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
+L Device:C C12
 U 1 1 61930F42
 P 6850 3750
-F 0 "C13" H 6965 3796 50  0000 L CNN
+F 0 "C12" H 6965 3796 50  0000 L CNN
 F 1 "0.1uF" H 6965 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6888 3600 50  0001 C CNN
 F 3 "~" H 6850 3750 50  0001 C CNN
@@ -365,10 +365,10 @@ F 4 "296-21684-1-ND" H 6300 4150 39  0000 C CNN "Digikey PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L Device:C C11
 U 1 1 61930AF3
 P 6400 3750
-F 0 "C12" H 6515 3796 50  0000 L CNN
+F 0 "C11" H 6515 3796 50  0000 L CNN
 F 1 "0.1uF" H 6515 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6438 3600 50  0001 C CNN
 F 3 "~" H 6400 3750 50  0001 C CNN
@@ -391,10 +391,10 @@ F 4 "XC2127CT-ND" V 8786 4320 39  0000 C CNN "Digikey PN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C17
+L Device:C C16
 U 1 1 6195EA6D
 P 9200 4850
-F 0 "C17" V 9150 4900 50  0000 L CNN
+F 0 "C16" V 9150 4900 50  0000 L CNN
 F 1 "22pF" V 9150 4600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9238 4700 50  0001 C CNN
 F 3 "~" H 9200 4850 50  0001 C CNN
@@ -403,10 +403,10 @@ F 4 "311-4030-1-ND" V 9050 4850 39  0000 C CNN "Digikey PN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C16
+L Device:C C15
 U 1 1 6195E432
 P 9200 4450
-F 0 "C16" V 9250 4500 50  0000 L CNN
+F 0 "C15" V 9250 4500 50  0000 L CNN
 F 1 "22pF" V 9250 4200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9238 4300 50  0001 C CNN
 F 3 "~" H 9200 4450 50  0001 C CNN
@@ -499,27 +499,15 @@ Button3
 Text HLabel 1250 1800 0    50   Input ~ 0
 Button4
 Wire Notes Line
-	1750 2050 1750 1000
-Wire Notes Line
-	1750 1000 750  1000
-Wire Notes Line
 	750  1000 750  2050
 Text Notes 800  1400 0    79   ~ 0
 Energy\nHarvesting\nGPIO/Analog In
 Text HLabel 1450 1950 0    50   Input ~ 0
 GeneratorVcc
 Wire Notes Line
-	1750 3900 1750 2850
-Wire Notes Line
-	1750 2850 750  2850
-Wire Notes Line
 	750  2850 750  3900
 Text Notes 800  3250 0    79   ~ 0
 Energy\nHarvesting\nGPIO/Analog In
-Wire Notes Line
-	750  2050 1750 2050
-Wire Notes Line
-	750  3900 1750 3900
 Text HLabel 1250 3600 0    50   Input ~ 0
 VBAT_OK
 Text Notes 850  3750 0    50   ~ 0
@@ -531,10 +519,10 @@ Wire Wire Line
 Text Notes 850  3850 0    50   ~ 0
 or just connect to ADC
 $Comp
-L Device:C C15
+L Device:C C14
 U 1 1 619E966F
 P 7900 3750
-F 0 "C15" H 8015 3796 50  0000 L CNN
+F 0 "C14" H 8015 3796 50  0000 L CNN
 F 1 "10uF" H 8015 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7938 3600 50  0001 C CNN
 F 3 "~" H 7900 3750 50  0001 C CNN
@@ -543,10 +531,10 @@ F 4 "399-11939-1-ND" H 7950 3450 39  0000 C CNN "Digikey PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C18
+L Device:C C17
 U 1 1 6191DC18
 P 9500 1600
-F 0 "C18" H 9615 1646 50  0000 L CNN
+F 0 "C17" H 9615 1646 50  0000 L CNN
 F 1 "1nF" H 9615 1555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9538 1450 50  0001 C CNN
 F 3 "~" H 9500 1600 50  0001 C CNN
@@ -614,4 +602,68 @@ Text Label 9105 3000 2    50   ~ 0
 P5.2_CLK
 Text Label 9090 3100 2    50   ~ 0
 P5.0_DIN
+Wire Wire Line
+	1450 1950 2200 1950
+Wire Wire Line
+	2200 1950 2200 3300
+Wire Wire Line
+	2200 3300 3250 3300
+Wire Wire Line
+	3250 5400 2450 5400
+Wire Wire Line
+	3250 5600 2450 5600
+Wire Wire Line
+	3250 5700 2450 5700
+Wire Wire Line
+	3250 5800 2450 5800
+Text Label 3150 5400 2    50   ~ 0
+P5.3_Button1
+Text Label 3150 5600 2    50   ~ 0
+P5.5_Button2
+Text Label 3150 5700 2    50   ~ 0
+P5.6_Button3
+Text Label 3150 5800 2    50   ~ 0
+P5.7_Button4
+Text Label 1800 1500 2    50   ~ 0
+P5.3_Button1
+Wire Wire Line
+	1250 1500 1800 1500
+Wire Wire Line
+	1250 1600 1800 1600
+Wire Wire Line
+	1250 1700 1800 1700
+Wire Wire Line
+	1250 1800 1800 1800
+Wire Notes Line
+	750  1000 1850 1000
+Wire Notes Line
+	750  2050 1850 2050
+Wire Notes Line
+	1850 1000 1850 2050
+Text Label 1800 1600 2    50   ~ 0
+P5.5_Button2
+Text Label 1800 1700 2    50   ~ 0
+P5.6_Button3
+Text Label 1800 1800 2    50   ~ 0
+P5.7_Button4
+Wire Notes Line
+	750  2850 1850 2850
+Wire Notes Line
+	750  3900 1850 3900
+Wire Notes Line
+	1850 2850 1850 3900
+Wire Wire Line
+	1250 3600 2200 3600
+Wire Wire Line
+	2200 3600 2200 3400
+Wire Wire Line
+	2200 3400 3250 3400
+Wire Notes Line
+	8400 2100 10500 2100
+Wire Notes Line
+	8400 3350 10500 3350
+Wire Notes Line
+	8400 2100 8400 3350
+Text Notes 8500 2250 0    79   ~ 0
+E-ink Display
 $EndSCHEMATC
