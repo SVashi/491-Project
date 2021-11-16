@@ -136,4 +136,21 @@ F 4 "296-TPS62161DSGTCT-ND" H 5900 4175 50  0000 C CNN "Digikey PN"
 	1    5900 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_US R?
+U 1 1 619B083B
+P 7550 3450
+AR Path="/61926AE2/619B083B" Ref="R?"  Part="1" 
+AR Path="/619B083B" Ref="R?"  Part="1" 
+AR Path="/619A7303/619B083B" Ref="R?"  Part="1" 
+F 0 "R?" V 7700 3400 50  0000 L CNN
+F 1 "0" V 7618 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7590 3440 50  0001 C CNN
+F 3 "~" H 7550 3450 50  0001 C CNN
+F 4 "YAG3755CT-ND" V 7450 3450 39  0000 C CNN "Digikey PN"
+	1    7550 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 3450 7950 3450
 $EndSCHEMATC

@@ -380,24 +380,92 @@ Button4
 Wire Wire Line
 	3300 2600 3300 2550
 Wire Wire Line
-	5100 1850 6550 1850
+	6550 3650 7100 3650
+Connection ~ 6550 3650
 Wire Wire Line
 	6550 1850 6550 3250
 Wire Wire Line
-	6550 3650 7100 3650
+	6550 3650 6550 4650
+$Comp
+L Device:R_US R?
+U 1 1 619B6F67
+P 6100 6200
+AR Path="/61926AE2/619B6F67" Ref="R?"  Part="1" 
+AR Path="/619B6F67" Ref="R?"  Part="1" 
+AR Path="/619E7D55/619B6F67" Ref="R?"  Part="1" 
+F 0 "R?" V 6250 6150 50  0000 L CNN
+F 1 "0" V 6168 6155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6140 6190 50  0001 C CNN
+F 3 "~" H 6100 6200 50  0001 C CNN
+F 4 "YAG3755CT-ND" V 6000 6200 39  0000 C CNN "Digikey PN"
+	1    6100 6200
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	5100 3250 6550 3250
+	5150 6200 5950 6200
+Wire Wire Line
+	6250 6200 6550 6200
+$Comp
+L Device:R_US R?
+U 1 1 619BB780
+P 6050 4650
+AR Path="/61926AE2/619BB780" Ref="R?"  Part="1" 
+AR Path="/619BB780" Ref="R?"  Part="1" 
+AR Path="/619E7D55/619BB780" Ref="R?"  Part="1" 
+F 0 "R?" V 6200 4600 50  0000 L CNN
+F 1 "0" V 6118 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6090 4640 50  0001 C CNN
+F 3 "~" H 6050 4650 50  0001 C CNN
+F 4 "YAG3755CT-ND" V 5950 4650 39  0000 C CNN "Digikey PN"
+	1    6050 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 4650 5900 4650
+Wire Wire Line
+	6200 4650 6550 4650
+Connection ~ 6550 4650
+Wire Wire Line
+	6550 4650 6550 6200
+$Comp
+L Device:R_US R?
+U 1 1 619C0235
+P 6050 1850
+AR Path="/61926AE2/619C0235" Ref="R?"  Part="1" 
+AR Path="/619C0235" Ref="R?"  Part="1" 
+AR Path="/619E7D55/619C0235" Ref="R?"  Part="1" 
+F 0 "R?" V 6200 1800 50  0000 L CNN
+F 1 "0" V 6118 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6090 1840 50  0001 C CNN
+F 3 "~" H 6050 1850 50  0001 C CNN
+F 4 "YAG3755CT-ND" V 5950 1850 39  0000 C CNN "Digikey PN"
+	1    6050 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 1850 5900 1850
+Wire Wire Line
+	6200 1850 6550 1850
+$Comp
+L Device:R_US R?
+U 1 1 619C6E50
+P 6100 3250
+AR Path="/61926AE2/619C6E50" Ref="R?"  Part="1" 
+AR Path="/619C6E50" Ref="R?"  Part="1" 
+AR Path="/619E7D55/619C6E50" Ref="R?"  Part="1" 
+F 0 "R?" V 6250 3200 50  0000 L CNN
+F 1 "0" V 6168 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6140 3240 50  0001 C CNN
+F 3 "~" H 6100 3250 50  0001 C CNN
+F 4 "YAG3755CT-ND" V 6000 3250 39  0000 C CNN "Digikey PN"
+	1    6100 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3250 5950 3250
+Wire Wire Line
+	6250 3250 6550 3250
 Connection ~ 6550 3250
 Wire Wire Line
 	6550 3250 6550 3650
-Wire Wire Line
-	5100 4650 6550 4650
-Wire Wire Line
-	6550 4650 6550 3650
-Connection ~ 6550 3650
-Wire Wire Line
-	5100 6200 6550 6200
-Wire Wire Line
-	6550 6200 6550 4650
-Connection ~ 6550 4650
 $EndSCHEMATC

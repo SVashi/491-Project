@@ -126,7 +126,7 @@ $EndComp
 Wire Wire Line
 	7400 2450 7400 2500
 Wire Wire Line
-	7100 2450 7400 2450
+	7100 2450 7150 2450
 Wire Wire Line
 	7100 2700 7100 2450
 Wire Wire Line
@@ -182,19 +182,6 @@ F 3 "" H 6700 4450 50  0001 C CNN
 	1    6700 4450
 	1    0    0    -1  
 $EndComp
-Connection ~ 5100 2650
-Wire Wire Line
-	4750 2950 5100 2950
-Connection ~ 4750 2950
-Wire Wire Line
-	4350 2950 4750 2950
-Wire Wire Line
-	4750 2650 4750 2700
-Wire Wire Line
-	4750 2950 4750 2900
-Wire Wire Line
-	4750 2650 5100 2650
-Connection ~ 4750 2650
 Connection ~ 4850 3950
 Connection ~ 4500 3950
 Wire Wire Line
@@ -265,43 +252,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 4450 6500 4450
 Connection ~ 6500 4450
-$Comp
-L Diode:ZMMxx D?
-U 1 1 619D7F03
-P 3800 2850
-AR Path="/619D7F03" Ref="D?"  Part="1" 
-AR Path="/61991596/619D7F03" Ref="D?"  Part="1" 
-F 0 "D?" V 3754 2930 50  0000 L CNN
-F 1 "Zener" V 3845 2930 50  0000 L CNN
-F 2 "Diode_SMD:D_MiniMELF" H 3800 2675 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/zmm1.pdf" H 3800 2850 50  0001 C CNN
-	1    3800 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3800 2700 3800 2650
-Wire Wire Line
-	3800 2650 4750 2650
-Wire Wire Line
-	3800 3000 4350 3000
-Wire Wire Line
-	4350 3000 4350 2950
-Wire Wire Line
-	3800 2650 3300 2650
-Connection ~ 3800 2650
-Wire Wire Line
-	3800 3000 3300 3000
-Wire Wire Line
-	3300 3000 3300 2950
-Connection ~ 3800 3000
 Wire Wire Line
 	6700 4300 6700 4450
-Text HLabel 2550 2650 0    50   Input ~ 0
-Vin
-Text HLabel 8400 3800 2    50   Output ~ 0
-Vout
 Wire Wire Line
-	7850 3800 8400 3800
+	7850 3800 8000 3800
 Connection ~ 7850 3800
 $Comp
 L Device:C_Small C?
@@ -311,6 +265,7 @@ F 0 "C?" H 5842 4246 50  0000 L CNN
 F 1 "0.01uF" H 5842 4155 50  0000 L CNN
 F 2 "" H 5750 4200 50  0001 C CNN
 F 3 "~" H 5750 4200 50  0001 C CNN
+F 4 "1276-CL10B103KB8WPJCCT-ND" V 5850 3600 39  0000 C CNN "Digikey PN"
 	1    5750 4200
 	1    0    0    -1  
 $EndComp
@@ -409,6 +364,7 @@ F 0 "C?" H 7942 3996 50  0000 L CNN
 F 1 "0.1uF" H 7942 3905 50  0000 L CNN
 F 2 "" H 7850 3950 50  0001 C CNN
 F 3 "~" H 7850 3950 50  0001 C CNN
+F 4 "311-1344-1-ND" H 8150 3850 39  0000 C CNN "Digikey PN"
 	1    7850 3950
 	1    0    0    -1  
 $EndComp
@@ -420,6 +376,7 @@ F 0 "C?" H 7542 3996 50  0000 L CNN
 F 1 "10uF" H 7542 3905 50  0000 L CNN
 F 2 "" H 7450 3950 50  0001 C CNN
 F 3 "~" H 7450 3950 50  0001 C CNN
+F 4 "399-11939-1-ND" H 7500 3850 39  0000 C CNN "Digikey PN"
 	1    7450 3950
 	1    0    0    -1  
 $EndComp
@@ -461,7 +418,7 @@ L Device:C_Small C?
 U 1 1 6199CFA4
 P 5100 2800
 F 0 "C?" H 5192 2846 50  0000 L CNN
-F 1 "4.7u" H 5192 2755 50  0000 L CNN
+F 1 "4.7uF" H 5192 2755 50  0000 L CNN
 F 2 "" H 5100 2800 50  0001 C CNN
 F 3 "~" H 5100 2800 50  0001 C CNN
 	1    5100 2800
@@ -478,23 +435,200 @@ F 3 "~" H 7400 2600 50  0001 C CNN
 	1    7400 2600
 	1    0    0    -1  
 $EndComp
+Text Notes 3550 4000 0    50   ~ 0
+VBAT_OV=4.2V\nVBAT_UV=1.3V\n\nVBAT_OK=1.5V\nVBAT_OK_HYST=1.8V\n
+Wire Wire Line
+	7300 3200 7700 3200
+Text HLabel 7700 3200 2    50   Output ~ 0
+VBAT_OK
+Text HLabel 8400 3800 2    50   Output ~ 0
+Vout
+$Comp
+L Connector:TestPoint TP?
+U 1 1 619CF02B
+P 7150 2400
+AR Path="/61941831/619CF02B" Ref="TP?"  Part="1" 
+AR Path="/61991596/619CF02B" Ref="TP?"  Part="1" 
+F 0 "TP?" H 7208 2518 50  0000 L CNN
+F 1 "TestPoint" H 7208 2427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7350 2400 50  0001 C CNN
+F 3 "~" H 7350 2400 50  0001 C CNN
+	1    7150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2400 7150 2450
+Connection ~ 7150 2450
+Wire Wire Line
+	7150 2450 7400 2450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 619D3EDF
+P 8000 3750
+AR Path="/61941831/619D3EDF" Ref="TP?"  Part="1" 
+AR Path="/61991596/619D3EDF" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8058 3868 50  0000 L CNN
+F 1 "TestPoint" H 8058 3777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 8200 3750 50  0001 C CNN
+F 3 "~" H 8200 3750 50  0001 C CNN
+	1    8000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3750 8000 3800
+Connection ~ 8000 3800
+Wire Wire Line
+	8000 3800 8400 3800
+Wire Wire Line
+	3100 2950 3450 2950
+Wire Wire Line
+	3100 2650 3100 2700
+Wire Wire Line
+	3100 2950 3100 2900
+Wire Wire Line
+	3100 2650 3250 2650
+Connection ~ 3100 2650
 $Comp
 L Device:CP1_Small C?
 U 1 1 6199CFFF
-P 4750 2800
+P 3100 2800
 AR Path="/6199CFFF" Ref="C?"  Part="1" 
 AR Path="/61991596/6199CFFF" Ref="C?"  Part="1" 
-F 0 "C?" H 4841 2846 50  0000 L CNN
-F 1 "47u" H 4841 2755 50  0000 L CNN
-F 2 "" H 4750 2800 50  0001 C CNN
-F 3 "~" H 4750 2800 50  0001 C CNN
-	1    4750 2800
+F 0 "C?" H 3191 2846 50  0000 L CNN
+F 1 "47uF" H 3191 2755 50  0000 L CNN
+F 2 "" H 3100 2800 50  0001 C CNN
+F 3 "~" H 3100 2800 50  0001 C CNN
+	1    3100 2800
 	1    0    0    -1  
 $EndComp
-Text Notes 3550 4000 0    50   ~ 0
-VBAT_OV=4.2V\nVBAT_UV=1.3V\n\nVBAT_OK=1.5V\nVBAT_OK_HYST=1.8V\n
-Text HLabel 7700 3200 2    50   Output ~ 0
-VBAT_OK
+$Comp
+L Diode:ZMMxx D?
+U 1 1 619D7F03
+P 2750 2800
+AR Path="/619D7F03" Ref="D?"  Part="1" 
+AR Path="/61991596/619D7F03" Ref="D?"  Part="1" 
+F 0 "D?" V 2704 2880 50  0000 L CNN
+F 1 "4V" V 2795 2880 50  0000 L CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2750 2625 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/zmm1.pdf" H 2750 2800 50  0001 C CNN
+	1    2750 2800
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	7300 3200 7700 3200
+	2750 2650 3100 2650
+Wire Wire Line
+	2750 2950 3100 2950
+Connection ~ 3100 2950
+Connection ~ 2750 2650
+Wire Wire Line
+	2450 2650 2750 2650
+Text HLabel 2450 2650 0    50   Input ~ 0
+Vin
+$Comp
+L Connector:TestPoint TP?
+U 1 1 619D814E
+P 3250 2600
+AR Path="/61941831/619D814E" Ref="TP?"  Part="1" 
+AR Path="/61991596/619D814E" Ref="TP?"  Part="1" 
+F 0 "TP?" H 3308 2718 50  0000 L CNN
+F 1 "TestPoint" H 3308 2627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3450 2600 50  0001 C CNN
+F 3 "~" H 3450 2600 50  0001 C CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2600 3250 2650
+Connection ~ 3250 2650
+$Comp
+L Device:C_Small C?
+U 1 1 619F0CC5
+P 3450 2800
+F 0 "C?" H 3480 2870 50  0000 L CNN
+F 1 "10uF" H 3520 2805 50  0000 L CNN
+F 2 "" H 3450 2800 50  0001 C CNN
+F 3 "~" H 3450 2800 50  0001 C CNN
+F 4 "DNU" H 3545 2735 50  0000 C CNN "Digikey PN"
+	1    3450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619F1106
+P 3800 2800
+F 0 "C?" H 3825 2860 50  0000 L CNN
+F 1 "10uF" H 3875 2800 50  0000 L CNN
+F 2 "" H 3800 2800 50  0001 C CNN
+F 3 "~" H 3800 2800 50  0001 C CNN
+F 4 "DNU" H 3920 2740 50  0000 C CNN "Digikey PN"
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619F556E
+P 4200 2800
+F 0 "C?" H 4235 2865 50  0000 L CNN
+F 1 "10uF" H 4275 2805 50  0000 L CNN
+F 2 "" H 4200 2800 50  0001 C CNN
+F 3 "~" H 4200 2800 50  0001 C CNN
+F 4 "DNU" H 4315 2740 50  0000 C CNN "Digikey PN"
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619F58AB
+P 4600 2800
+F 0 "C?" H 4620 2865 50  0000 L CNN
+F 1 "10uF" H 4660 2800 50  0000 L CNN
+F 2 "" H 4600 2800 50  0001 C CNN
+F 3 "~" H 4600 2800 50  0001 C CNN
+F 4 "DNU" H 4705 2740 50  0000 C CNN "Digikey PN"
+	1    4600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2900 3450 2950
+Wire Wire Line
+	3800 2900 3800 2950
+Wire Wire Line
+	3800 2950 3450 2950
+Connection ~ 3450 2950
+Wire Wire Line
+	3800 2950 4200 2950
+Wire Wire Line
+	4200 2950 4200 2900
+Connection ~ 3800 2950
+Wire Wire Line
+	4200 2950 4600 2950
+Wire Wire Line
+	4600 2950 4600 2900
+Connection ~ 4200 2950
+Wire Wire Line
+	4600 2950 5100 2950
+Connection ~ 4600 2950
+Wire Wire Line
+	3250 2650 3450 2650
+Connection ~ 5100 2650
+Wire Wire Line
+	3450 2700 3450 2650
+Connection ~ 3450 2650
+Wire Wire Line
+	3450 2650 3800 2650
+Wire Wire Line
+	3800 2700 3800 2650
+Connection ~ 3800 2650
+Wire Wire Line
+	3800 2650 4200 2650
+Wire Wire Line
+	4200 2700 4200 2650
+Connection ~ 4200 2650
+Wire Wire Line
+	4200 2650 4600 2650
+Wire Wire Line
+	4600 2700 4600 2650
+Connection ~ 4600 2650
+Wire Wire Line
+	4600 2650 5100 2650
 $EndSCHEMATC
