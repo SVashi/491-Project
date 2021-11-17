@@ -215,23 +215,23 @@ Wire Wire Line
 	4900 4500 4900 4950
 Wire Wire Line
 	4900 4950 7050 4950
-Text Notes 6850 1750 0    79   ~ 0
-TODO:\nFootprints/bom spec\nFigure out buck converter\nAdd multiplayer connection pins
+Text Notes 6700 850  0    79   ~ 0
+TODO:\nFind correct connector for generator
 Wire Notes Line
-	6650 650  6650 1950
+	6650 650  6650 1400
 Wire Notes Line
-	6650 1950 8700 1950
+	6650 1400 7800 1400
 Wire Notes Line
-	8700 1950 8700 650 
+	7800 1400 7800 650 
 Wire Notes Line
-	6650 650  8700 650 
+	6650 650  7800 650 
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L Connector_Generic:Conn_01x03 J100
 U 1 1 61979531
 P 6550 4300
-F 0 "J1" V 6750 4350 50  0000 R CNN
+F 0 "J100" V 6750 4350 50  0000 R CNN
 F 1 "Voltage Source Select" V 6650 4700 50  0000 R CNN
-F 2 "" H 6550 4300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6550 4300 50  0001 C CNN
 F 3 "~" H 6550 4300 50  0001 C CNN
 	1    6550 4300
 	0    1    1    0   
@@ -244,15 +244,13 @@ Wire Wire Line
 	7050 4000 6650 4000
 Wire Wire Line
 	6650 4000 6650 4100
-Wire Wire Line
-	6550 4100 6550 3900
 $Comp
 L power:+3.3V #PWR?
 U 1 1 61980457
 P 6550 3900
 AR Path="/61926AE2/61980457" Ref="#PWR?"  Part="1" 
-AR Path="/61980457" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 6550 3750 50  0001 C CNN
+AR Path="/61980457" Ref="#PWR0100"  Part="1" 
+F 0 "#PWR0100" H 6550 3750 50  0001 C CNN
 F 1 "+3.3V" H 6565 4073 50  0000 C CNN
 F 2 "" H 6550 3900 50  0001 C CNN
 F 3 "" H 6550 3900 50  0001 C CNN
@@ -260,12 +258,12 @@ F 3 "" H 6550 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L batteryless_gaming_device-rescue:E-Ink_Display_1.54Inch U1
+L batteryless_gaming_device-rescue:E-Ink_Display_1.54Inch U100
 U 1 1 61986176
 P 9550 3650
-F 0 "U1" H 9800 3800 50  0000 L CNN
+F 0 "U100" H 9800 3800 50  0000 L CNN
 F 1 "E-Ink_Display_1.54Inch" H 9600 3700 50  0000 L CNN
-F 2 "" H 9550 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9550 4150 50  0001 C CNN
 F 3 "" H 9550 4150 50  0001 C CNN
 	1    9550 3650
 	1    0    0    -1  
@@ -275,8 +273,8 @@ L power:GND #PWR?
 U 1 1 61988A0E
 P 9600 4400
 AR Path="/61926AE2/61988A0E" Ref="#PWR?"  Part="1" 
-AR Path="/61988A0E" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 9600 4150 50  0001 C CNN
+AR Path="/61988A0E" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 9600 4150 50  0001 C CNN
 F 1 "GND" H 9605 4227 50  0000 C CNN
 F 2 "" H 9600 4400 50  0001 C CNN
 F 3 "" H 9600 4400 50  0001 C CNN
@@ -290,8 +288,8 @@ L power:+3.3V #PWR?
 U 1 1 6198A1ED
 P 9600 3500
 AR Path="/61926AE2/6198A1ED" Ref="#PWR?"  Part="1" 
-AR Path="/6198A1ED" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 9600 3350 50  0001 C CNN
+AR Path="/6198A1ED" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 9600 3350 50  0001 C CNN
 F 1 "+3.3V" H 9615 3673 50  0000 C CNN
 F 2 "" H 9600 3500 50  0001 C CNN
 F 3 "" H 9600 3500 50  0001 C CNN
@@ -301,45 +299,45 @@ $EndComp
 Wire Wire Line
 	9600 3500 9600 3550
 $Comp
-L Mechanical:MountingHole_Pad H1
+L Mechanical:MountingHole_Pad H100
 U 1 1 6198BDFD
 P 9350 850
-F 0 "H1" H 9450 899 50  0000 L CNN
+F 0 "H100" H 9450 899 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9350 1100 50  0000 L CNN
-F 2 "" H 9350 850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 9350 850 50  0001 C CNN
 F 3 "~" H 9350 850 50  0001 C CNN
 	1    9350 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L Mechanical:MountingHole_Pad H102
 U 1 1 6198CE4F
 P 9950 850
-F 0 "H3" H 10050 899 50  0000 L CNN
+F 0 "H102" H 10050 899 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9350 1100 50  0000 L CNN
-F 2 "" H 9950 850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 9950 850 50  0001 C CNN
 F 3 "~" H 9950 850 50  0001 C CNN
 	1    9950 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
+L Mechanical:MountingHole_Pad H101
 U 1 1 6198D15F
 P 9350 1350
-F 0 "H2" H 9450 1399 50  0000 L CNN
+F 0 "H101" H 9450 1399 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9350 2100 50  0000 L CNN
-F 2 "" H 9350 1350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 9350 1350 50  0001 C CNN
 F 3 "~" H 9350 1350 50  0001 C CNN
 	1    9350 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L Mechanical:MountingHole_Pad H103
 U 1 1 6198D37A
 P 9950 1350
-F 0 "H4" H 10050 1399 50  0000 L CNN
+F 0 "H103" H 10050 1399 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9350 2100 50  0000 L CNN
-F 2 "" H 9950 1350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 9950 1350 50  0001 C CNN
 F 3 "~" H 9950 1350 50  0001 C CNN
 	1    9950 1350
 	1    0    0    -1  
@@ -349,8 +347,8 @@ L power:GND #PWR?
 U 1 1 6198DDE0
 P 9350 1450
 AR Path="/61926AE2/6198DDE0" Ref="#PWR?"  Part="1" 
-AR Path="/6198DDE0" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 9350 1200 50  0001 C CNN
+AR Path="/6198DDE0" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 9350 1200 50  0001 C CNN
 F 1 "GND" H 9355 1277 50  0000 C CNN
 F 2 "" H 9350 1450 50  0001 C CNN
 F 3 "" H 9350 1450 50  0001 C CNN
@@ -362,8 +360,8 @@ L power:GND #PWR?
 U 1 1 6198E313
 P 9950 1450
 AR Path="/61926AE2/6198E313" Ref="#PWR?"  Part="1" 
-AR Path="/6198E313" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 9950 1200 50  0001 C CNN
+AR Path="/6198E313" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 9950 1200 50  0001 C CNN
 F 1 "GND" H 9955 1277 50  0000 C CNN
 F 2 "" H 9950 1450 50  0001 C CNN
 F 3 "" H 9950 1450 50  0001 C CNN
@@ -375,8 +373,8 @@ L power:GND #PWR?
 U 1 1 6198E5F3
 P 9350 950
 AR Path="/61926AE2/6198E5F3" Ref="#PWR?"  Part="1" 
-AR Path="/6198E5F3" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 9350 700 50  0001 C CNN
+AR Path="/6198E5F3" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 9350 700 50  0001 C CNN
 F 1 "GND" H 9355 777 50  0000 C CNN
 F 2 "" H 9350 950 50  0001 C CNN
 F 3 "" H 9350 950 50  0001 C CNN
@@ -388,8 +386,8 @@ L power:GND #PWR?
 U 1 1 6198E95A
 P 9950 950
 AR Path="/61926AE2/6198E95A" Ref="#PWR?"  Part="1" 
-AR Path="/6198E95A" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 9950 700 50  0001 C CNN
+AR Path="/6198E95A" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 9950 700 50  0001 C CNN
 F 1 "GND" H 9955 777 50  0000 C CNN
 F 2 "" H 9950 950 50  0001 C CNN
 F 3 "" H 9950 950 50  0001 C CNN
@@ -412,4 +410,70 @@ Wire Wire Line
 	8950 4100 9200 4100
 Wire Wire Line
 	8950 4200 9200 4200
+Wire Wire Line
+	6550 4100 6550 3900
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61ACAB8C
+P 1450 800
+F 0 "#FLG0101" H 1450 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 1450 973 50  0000 C CNN
+F 2 "" H 1450 800 50  0001 C CNN
+F 3 "~" H 1450 800 50  0001 C CNN
+	1    1450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61ACB040
+P 1900 950
+F 0 "#FLG0102" H 1900 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 1123 50  0000 C CNN
+F 2 "" H 1900 950 50  0001 C CNN
+F 3 "~" H 1900 950 50  0001 C CNN
+	1    1900 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61ACB2DF
+P 1900 800
+AR Path="/61926AE2/61ACB2DF" Ref="#PWR?"  Part="1" 
+AR Path="/61ACB2DF" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 1900 650 50  0001 C CNN
+F 1 "+3.3V" H 1915 973 50  0000 C CNN
+F 2 "" H 1900 800 50  0001 C CNN
+F 3 "" H 1900 800 50  0001 C CNN
+	1    1900 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 950  1900 800 
+$Comp
+L power:GND #PWR0108
+U 1 1 61ACDFF7
+P 1450 950
+F 0 "#PWR0108" H 1450 700 50  0001 C CNN
+F 1 "GND" H 1455 777 50  0000 C CNN
+F 2 "" H 1450 950 50  0001 C CNN
+F 3 "" H 1450 950 50  0001 C CNN
+	1    1450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 950  1450 800 
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61C1154B
+P 2850 3250
+F 0 "#FLG0103" H 2850 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 3423 50  0000 C CNN
+F 2 "" H 2850 3250 50  0001 C CNN
+F 3 "~" H 2850 3250 50  0001 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3250 2850 3300
+Connection ~ 2850 3300
 $EndSCHEMATC
