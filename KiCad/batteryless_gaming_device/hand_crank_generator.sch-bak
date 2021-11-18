@@ -21,8 +21,9 @@ AR Path="/619AD5B9" Ref="M?"  Part="1"
 AR Path="/619A7303/619AD5B9" Ref="M300"  Part="1" 
 F 0 "M300" H 4244 5244 50  0000 C CNN
 F 1 "Hand Generator" H 4244 5153 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4250 4710 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 4250 4710 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4250 4710 50  0001 C CNN
+F 4 "A100097-ND" H 4250 5100 39  0000 C CNN "Digikey PN"
 	1    4250 4900
 	-1   0    0    -1  
 $EndComp

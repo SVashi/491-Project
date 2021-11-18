@@ -519,18 +519,6 @@ F 4 "DNU" H 4315 2740 50  0000 C CNN "Digikey PN"
 	1    4200 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C203
-U 1 1 619F58AB
-P 4600 2800
-F 0 "C203" H 4620 2865 50  0000 L CNN
-F 1 "10uF" H 4660 2800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4600 2800 50  0001 C CNN
-F 3 "~" H 4600 2800 50  0001 C CNN
-F 4 "DNU" H 4705 2740 50  0000 C CNN "Digikey PN"
-	1    4600 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 2900 3450 2950
 Wire Wire Line
@@ -543,14 +531,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 2950 4200 2900
 Connection ~ 3800 2950
-Wire Wire Line
-	4200 2950 4600 2950
-Wire Wire Line
-	4600 2950 4600 2900
 Connection ~ 4200 2950
-Wire Wire Line
-	4600 2950 5100 2950
-Connection ~ 4600 2950
 Wire Wire Line
 	3250 2650 3450 2650
 Connection ~ 5100 2650
@@ -567,13 +548,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 2700 4200 2650
 Connection ~ 4200 2650
-Wire Wire Line
-	4200 2650 4600 2650
-Wire Wire Line
-	4600 2700 4600 2650
-Connection ~ 4600 2650
-Wire Wire Line
-	4600 2650 5100 2650
 Wire Wire Line
 	2750 2950 3450 2950
 Wire Wire Line
@@ -592,6 +566,7 @@ F 0 "U200" H 7344 3546 50  0000 L CNN
 F 1 "BQ25504" H 7344 3455 50  0000 L CNN
 F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 6700 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/bq25504.pdf" H 6400 4300 50  0001 C CNN
+F 4 "296-48495-1-ND" H 7650 3350 39  0000 C CNN "Digikey PN"
 	1    6700 3500
 	1    0    0    -1  
 $EndComp
@@ -618,4 +593,8 @@ Wire Wire Line
 Connection ~ 2750 2650
 Wire Wire Line
 	2750 2650 3250 2650
+Wire Wire Line
+	4200 2950 5100 2950
+Wire Wire Line
+	4200 2650 5100 2650
 $EndSCHEMATC

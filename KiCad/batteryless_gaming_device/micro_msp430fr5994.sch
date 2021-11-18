@@ -14,20 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L batteryless_gaming_device-rescue:MSP430FR5994 U?
-U 1 1 6192B25C
-P 4300 1400
-AR Path="/6192B25C" Ref="U?"  Part="1" 
-AR Path="/61926AE2/6192B25C" Ref="U400"  Part="1" 
-F 0 "U400" H 4350 1650 50  0000 C CNN
-F 1 "MSP430FR5994" H 4350 1550 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" V 3400 1200 354 0001 C CNN
-F 3 "" V 3400 1200 354 0001 C CNN
-F 4 "296-45560-1-ND" H 4350 1450 39  0000 C CNN "Digikey PN"
-	1    4300 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C400
 U 1 1 6192E176
 P 5850 3750
@@ -35,7 +21,7 @@ F 0 "C400" H 5965 3796 50  0000 L CNN
 F 1 "0.1uF" H 5965 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5888 3600 50  0001 C CNN
 F 3 "~" H 5850 3750 50  0001 C CNN
-F 4 "296-21684-1-ND" H 6300 4050 39  0000 C CNN "Digikey PN"
+F 4 "311-1344-1-ND" H 6300 4050 39  0000 C CNN "Digikey PN"
 	1    5850 3750
 	1    0    0    -1  
 $EndComp
@@ -64,8 +50,6 @@ Wire Wire Line
 Connection ~ 5500 4100
 Wire Wire Line
 	5500 4200 5500 4300
-Wire Wire Line
-	5500 4300 5400 4300
 Connection ~ 5500 4200
 $Comp
 L power:GND #PWR0402
@@ -80,14 +64,11 @@ F 3 "" H 5750 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 4300 5750 4300
-Connection ~ 5500 4300
 Wire Wire Line
 	5750 4300 5850 4300
 Wire Wire Line
 	5850 4300 5850 3900
 Connection ~ 5750 4300
-Wire Wire Line
-	5500 3200 5400 3200
 Wire Wire Line
 	5500 3200 5500 3100
 Wire Wire Line
@@ -97,7 +78,6 @@ Wire Wire Line
 Wire Wire Line
 	5500 3000 5400 3000
 Connection ~ 5500 3100
-Connection ~ 5500 3200
 $Comp
 L power:+3.3V #PWR0406
 U 1 1 6193DF42
@@ -160,19 +140,11 @@ NoConn ~ 5400 5900
 NoConn ~ 5400 6000
 NoConn ~ 5400 6100
 NoConn ~ 5400 1900
-NoConn ~ 5400 2000
-NoConn ~ 5400 2100
-NoConn ~ 5400 2200
 NoConn ~ 3250 3100
 NoConn ~ 3250 2700
 NoConn ~ 3250 2800
 NoConn ~ 3250 4700
 NoConn ~ 3250 4800
-NoConn ~ 3250 5500
-NoConn ~ 3250 6400
-NoConn ~ 3250 6500
-NoConn ~ 3250 6600
-NoConn ~ 3250 6700
 Text Label 5900 5500 2    50   ~ 0
 TEST_SBWTCK
 Text Label 5900 5400 2    50   ~ 0
@@ -287,19 +259,12 @@ Wire Notes Line
 	5550 4550 8350 4550
 Wire Notes Line
 	8350 3550 8350 4550
-Wire Wire Line
-	7100 4000 7350 4000
 Connection ~ 7100 4000
 Wire Wire Line
 	7100 4100 7100 4000
-Connection ~ 7350 4000
 Wire Wire Line
 	7900 4000 7900 3900
-Wire Wire Line
-	7350 4000 7900 4000
 Connection ~ 6850 4000
-Wire Wire Line
-	7350 4000 7350 3900
 Wire Wire Line
 	6850 4000 7100 4000
 Wire Wire Line
@@ -327,32 +292,13 @@ Wire Wire Line
 	6400 3500 6400 3600
 Wire Wire Line
 	6850 3500 6400 3500
-Connection ~ 7350 3500
 Wire Wire Line
 	6850 3500 6850 3600
-Wire Wire Line
-	7350 3500 6850 3500
 Wire Wire Line
 	7900 3500 7900 3600
 Connection ~ 7900 3500
 Wire Wire Line
-	7350 3500 7350 3600
-Wire Wire Line
-	7900 3500 7350 3500
-Wire Wire Line
 	7900 3200 7900 3500
-$Comp
-L Device:C C403
-U 1 1 619313AD
-P 7350 3750
-F 0 "C403" H 7465 3796 50  0000 L CNN
-F 1 "0.1uF" H 7465 3705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7388 3600 50  0001 C CNN
-F 3 "~" H 7350 3750 50  0001 C CNN
-F 4 "296-21684-1-ND" H 6300 4200 39  0000 C CNN "Digikey PN"
-	1    7350 3750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C402
 U 1 1 61930F42
@@ -361,7 +307,7 @@ F 0 "C402" H 6965 3796 50  0000 L CNN
 F 1 "0.1uF" H 6965 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6888 3600 50  0001 C CNN
 F 3 "~" H 6850 3750 50  0001 C CNN
-F 4 "296-21684-1-ND" H 6300 4150 39  0000 C CNN "Digikey PN"
+F 4 "311-1344-1-ND" H 6300 4150 39  0000 C CNN "Digikey PN"
 	1    6850 3750
 	1    0    0    -1  
 $EndComp
@@ -373,7 +319,7 @@ F 0 "C401" H 6515 3796 50  0000 L CNN
 F 1 "0.1uF" H 6515 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6438 3600 50  0001 C CNN
 F 3 "~" H 6400 3750 50  0001 C CNN
-F 4 "296-21684-1-ND" H 6300 4100 39  0000 C CNN "Digikey PN"
+F 4 "311-1344-1-ND" H 6300 4100 39  0000 C CNN "Digikey PN"
 	1    6400 3750
 	1    0    0    -1  
 $EndComp
@@ -606,14 +552,14 @@ Wire Wire Line
 Wire Wire Line
 	3250 5400 2450 5400
 Wire Wire Line
-	3250 5600 2450 5600
+	3250 5200 2450 5200
 Wire Wire Line
 	3250 5700 2450 5700
 Wire Wire Line
 	3250 5800 2450 5800
 Text Label 3150 5400 2    50   ~ 0
 P5.3_Button1
-Text Label 3150 5600 2    50   ~ 0
+Text Label 3150 5200 2    50   ~ 0
 P5.5_Button2
 Text Label 3150 5700 2    50   ~ 0
 P5.6_Button3
@@ -770,45 +716,34 @@ NoConn ~ 6650 1750
 NoConn ~ 6650 1850
 NoConn ~ 7400 1800
 Wire Wire Line
-	3250 6000 1800 6000
+	3250 5500 1800 5500
 Wire Wire Line
-	3250 6100 1800 6100
+	3250 5600 1800 5600
 $Comp
 L Connector_Generic:Conn_01x02 J401
 U 1 1 61A8E8B4
-P 1600 6000
-F 0 "J401" H 1600 6200 50  0000 C CNN
-F 1 "Multiplayer_Connector" H 1650 6100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1600 6000 50  0001 C CNN
-F 3 "~" H 1600 6000 50  0001 C CNN
-	1    1600 6000
+P 1600 5500
+F 0 "J401" H 1600 5700 50  0000 C CNN
+F 1 "Multiplayer_Connector" H 1650 5600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1600 5500 50  0001 C CNN
+F 3 "~" H 1600 5500 50  0001 C CNN
+	1    1600 5500
 	-1   0    0    -1  
 $EndComp
-Text Label 2550 6000 2    50   ~ 0
+Text Label 2550 5500 2    50   ~ 0
 P6.0_TxD
-Text Label 2550 6100 2    50   ~ 0
+Text Label 2550 5600 2    50   ~ 0
 P6.1_RxD
 Wire Notes Line
-	750  5500 750  6250
+	750  5000 750  5750
 Wire Notes Line
-	750  6250 2000 6250
+	750  5750 2000 5750
 Wire Notes Line
-	2000 6250 2000 5500
+	2000 5750 2000 5000
 Wire Notes Line
-	750  5500 2000 5500
-Text Notes 850  5800 0    79   ~ 0
+	750  5000 2000 5000
+Text Notes 850  5300 0    79   ~ 0
 MULTIPLAYER\nPORT
-$Comp
-L Connector_Generic:Conn_01x06 J400
-U 1 1 61AD4142
-P 1350 3800
-F 0 "J400" H 1450 3500 50  0000 L CNN
-F 1 "GPIO_breakout" H 1300 3400 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1350 3800 50  0001 C CNN
-F 3 "~" H 1350 3800 50  0001 C CNN
-	1    1350 3800
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 3700 3250 3700
 Wire Wire Line
@@ -827,18 +762,16 @@ $EndComp
 $Comp
 L power:GND #PWR0401
 U 1 1 61AFF4BE
-P 1600 4100
-F 0 "#PWR0401" H 1600 3850 50  0001 C CNN
-F 1 "GND" H 1605 3927 50  0000 C CNN
-F 2 "" H 1600 4100 50  0001 C CNN
-F 3 "" H 1600 4100 50  0001 C CNN
-	1    1600 4100
+P 1600 3900
+F 0 "#PWR0401" H 1600 3650 50  0001 C CNN
+F 1 "GND" H 1605 3727 50  0000 C CNN
+F 2 "" H 1600 3900 50  0001 C CNN
+F 3 "" H 1600 3900 50  0001 C CNN
+	1    1600 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 4100 1600 4100
-Wire Wire Line
-	1550 3900 3250 3900
+	1550 3900 1600 3900
 Wire Wire Line
 	1550 3600 1600 3600
 Wire Wire Line
@@ -853,12 +786,6 @@ Text Label 2600 3700 2    50   ~ 0
 P3.4
 Text Label 2600 3800 2    50   ~ 0
 P3.5
-Text Label 2600 3900 2    50   ~ 0
-P3.6
-Wire Wire Line
-	1550 4000 3250 4000
-Text Label 2600 4000 2    50   ~ 0
-P3.7
 Wire Notes Line
 	750  3300 750  4350
 Wire Notes Line
@@ -869,9 +796,6 @@ Wire Notes Line
 	1850 3300 750  3300
 Text Notes 800  3550 0    79   ~ 0
 GPIO\nBREAKOUT
-NoConn ~ 3250 6200
-NoConn ~ 3250 6300
-NoConn ~ 3250 5200
 NoConn ~ 3250 4900
 NoConn ~ 3250 4600
 NoConn ~ 3250 4200
@@ -891,9 +815,6 @@ NoConn ~ 5400 1600
 NoConn ~ 5400 1700
 NoConn ~ 5400 1800
 NoConn ~ 5400 2400
-NoConn ~ 5400 2500
-NoConn ~ 5400 2600
-NoConn ~ 5400 2700
 NoConn ~ 5400 5000
 NoConn ~ 5400 5100
 $Comp
@@ -910,4 +831,33 @@ $EndComp
 Wire Wire Line
 	7500 700  7500 750 
 Connection ~ 7500 750 
+$Comp
+L batteryless_gaming_device-rescue:MSP430FR5994IPM U400
+U 1 1 61A050A0
+P 4300 1400
+F 0 "U400" H 4325 1642 50  0000 C CNN
+F 1 "MSP430FR5994IPM" H 4325 1551 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4325 1650 50  0001 C CNN
+F 3 "" H 4325 1650 50  0001 C CNN
+F 4 "296-45560-1-ND" H 4325 1468 39  0000 C CNN "Digikey PN"
+	1    4300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4000 7900 4000
+Wire Wire Line
+	6850 3500 7900 3500
+$Comp
+L Connector_Generic:Conn_01x04 J400
+U 1 1 61AD24EA
+P 1350 3700
+F 0 "J400" H 1550 3500 50  0000 C CNN
+F 1 "GPIO_breakout" H 1550 3400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1350 3700 50  0001 C CNN
+F 3 "~" H 1350 3700 50  0001 C CNN
+	1    1350 3700
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3250 3900
+NoConn ~ 3250 4000
 $EndSCHEMATC

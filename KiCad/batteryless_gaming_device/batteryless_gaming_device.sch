@@ -263,7 +263,7 @@ U 1 1 61986176
 P 9550 3650
 F 0 "U100" H 9800 3800 50  0000 L CNN
 F 1 "E-Ink_Display_1.54Inch" H 9600 3700 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9550 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 9550 4150 50  0001 C CNN
 F 3 "" H 9550 4150 50  0001 C CNN
 	1    9550 3650
 	1    0    0    -1  
@@ -395,9 +395,9 @@ F 3 "" H 9950 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	9100 500  9100 1700
+	9100 500  9100 2250
 Wire Notes Line
-	9100 1700 10500 1700
+	9100 2250 10500 2250
 Wire Wire Line
 	8950 3700 9200 3700
 Wire Wire Line
@@ -476,4 +476,39 @@ $EndComp
 Wire Wire Line
 	2850 3250 2850 3300
 Connection ~ 2850 3300
+$Comp
+L batteryless_gaming_device-rescue:E-ink_Display_Outline U101
+U 1 1 6195AE48
+P 9650 4950
+F 0 "U101" H 9600 5050 50  0000 L CNN
+F 1 "E-ink_Display_Outline" H 9350 4950 50  0000 L CNN
+F 2 "batteryless_gaming_device:E-Ink_Display_1.54Inch" H 9650 4950 50  0001 C CNN
+F 3 "" H 9650 4950 50  0001 C CNN
+	1    9650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 61AF7AB7
+P 9950 1900
+F 0 "H104" H 10050 1949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9350 3200 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 9950 1900 50  0001 C CNN
+F 3 "~" H 9950 1900 50  0001 C CNN
+	1    9950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61AF7ABD
+P 9950 2000
+AR Path="/61926AE2/61AF7ABD" Ref="#PWR?"  Part="1" 
+AR Path="/61AF7ABD" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 9950 1750 50  0001 C CNN
+F 1 "GND" H 9955 1827 50  0000 C CNN
+F 2 "" H 9950 2000 50  0001 C CNN
+F 3 "" H 9950 2000 50  0001 C CNN
+	1    9950 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

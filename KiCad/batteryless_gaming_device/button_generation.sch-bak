@@ -19,7 +19,7 @@ U 1 1 61A3608F
 P 3600 6450
 F 0 "SW603" H 3600 6909 50  0000 C CNN
 F 1 "EH_switch" H 3600 6818 50  0000 C CNN
-F 2 "batteryless_gaming_device:EH_switch" H 3800 6150 50  0001 C CNN
+F 2 "batteryless_gaming_device:EH_switch_v2" H 3800 6150 50  0001 C CNN
 F 3 "" H 3600 6450 50  0001 C CNN
 F 4 "CH721-ND;EG5982-ND" H 3600 6735 39  0000 C CNN "Digikey PN"
 	1    3600 6450
@@ -102,7 +102,7 @@ U 1 1 61A58E70
 P 3600 4900
 F 0 "SW602" H 3600 5359 50  0000 C CNN
 F 1 "EH_switch" H 3600 5268 50  0000 C CNN
-F 2 "batteryless_gaming_device:EH_switch" H 3800 4600 50  0001 C CNN
+F 2 "batteryless_gaming_device:EH_switch_v2" H 3800 4600 50  0001 C CNN
 F 3 "" H 3600 4900 50  0001 C CNN
 F 4 "CH721-ND;EG5982-ND" H 3600 5185 39  0000 C CNN "Digikey PN"
 	1    3600 4900
@@ -195,7 +195,7 @@ U 1 1 61A5B26C
 P 3600 3500
 F 0 "SW601" H 3600 3959 50  0000 C CNN
 F 1 "EH_switch" H 3600 3868 50  0000 C CNN
-F 2 "batteryless_gaming_device:EH_switch" H 3800 3200 50  0001 C CNN
+F 2 "batteryless_gaming_device:EH_switch_v2" H 3800 3200 50  0001 C CNN
 F 3 "" H 3600 3500 50  0001 C CNN
 F 4 "CH721-ND;EG5982-ND" H 3600 3785 39  0000 C CNN "Digikey PN"
 	1    3600 3500
@@ -288,7 +288,7 @@ U 1 1 61A5E757
 P 3600 2100
 F 0 "SW600" H 3600 2559 50  0000 C CNN
 F 1 "EH_switch" H 3600 2468 50  0000 C CNN
-F 2 "batteryless_gaming_device:EH_switch" H 3800 1800 50  0001 C CNN
+F 2 "batteryless_gaming_device:EH_switch_v2" H 3800 1800 50  0001 C CNN
 F 3 "" H 3600 2100 50  0001 C CNN
 F 4 "CH721-ND;EG5982-ND" H 3600 2385 39  0000 C CNN "Digikey PN"
 	1    3600 2100

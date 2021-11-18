@@ -1,0 +1,57 @@
+Component,References,Value,Quantity Per PCB,Footprint,DigiKey PN
+1,C405 C406,22pF,2,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,311-4030-1-ND
+2,C407 C600 C601 C602 C603,1nF,5,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1276-CL10B102KB8WPJCCT-ND
+3,C205,0.01uF,1,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1276-CL10B103KB8WPJCCT-ND
+4,C208 C400 C401 C402 C501 C503,0.1uF,6,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,311-1344-1-ND
+5,C502,1uF,1,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1276-1946-1-ND
+6,C204,4.7uF,1,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1276-1902-1-ND
+,,,,,
+8,C207 C404 C500 C504 C505,10uF,5,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,399-11939-1-ND
+9,C206,220mF,1,CP_Radial_D14.0mm_P5.00mm,
+10,D200,BZX84Cxx,1,D_SOT-23_ANK_HandSoldering,BZX84C4V3-FDICT-ND
+11,D600 D601 D602 D603,D_Bridge_+-AA,4,TO-269AA,641-1213-1-ND
+12,D300,SDA006,1,SOT-363_SC-70-6_Handsoldering,SDA006-7DICT-ND
+13,J400,GPIO_breakout,1,PinHeader_1x04_P2.54mm_Vertical,
+14,J401,Multiplayer_Connector,1,PinHeader_1x02_P2.54mm_Horizontal,
+15,J402,Program_Header,1,PinHeader_1x06_P2.54mm_Vertical,
+16,J100,Voltage Source Select,1,PinHeader_1x03_P2.54mm_Vertical,
+17,L500,2.2u,1,L_Taiyo-Yuden_NR-30xx_HandSoldering,587-1648-1-ND
+18,L200,22u,1,L_Wuerth-3816_6.3x6.3mm,732-1012-1-ND
+19,M300,Hand Generator,1,PinHeader_1x03_P2.00mm_Vertical,A100097-ND
+20,R301 R400 R500 R501 R502 R505 R604 R605 R606 R607,0,10,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,YAG3755CT-ND
+21,R401,47k,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603JT47K0CT-ND
+22,R504,180k,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603FT180KCT-ND
+23,R202,0.39M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603FT390KCT-ND
+24,R300 R302 R503 R600 R601 R602 R603,1M,7,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,511-1820-1-ND
+25,R205,1.4M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603FT1M40CT-ND
+26,R204,1.69M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,541-1.69MHCT-ND
+27,R201,4.53M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603FT4M53CT-ND
+28,R200,5.62M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603FT5M62CT-ND
+29,R206,6.98M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,RMCF0603FT6M98CT-ND
+30,R203,9.76M,1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,541-9.76MHCT-ND
+31,R207 R208,10M,2,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,541-2804-1-ND
+32,SW600 SW601 SW602 SW603,EH_switch,4,EH_switch_v2,EG5982-ND
+33,SW400,FSMSM,1,SW_SPST_FSMSM,450-1140-ND
+34,U200,BQ25504,1,VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm,296-48495-1-ND
+35,U100,E-Ink_Display_1.54Inch,1,PinHeader_1x08_P2.54mm_Horizontal,
+36,U101,E-ink_Display_Outline,1,E-Ink_Display_1.54Inch,
+37,U400,MSP430FR5994IPM,1,LQFP-64_10x10mm_P0.5mm,296-45560-1-ND
+38,U401,SN74HCS32,1,TSSOP-14_4.4x5mm_P0.65mm,296-SN74HCS32PWRCT-ND
+39,U500,TPS61201DRC,1,Texas_S-PVSON-N10_ThermalVias,296-21684-1-ND
+40,Y400,ECS-.327-12.5-34R-C-TR,1,Crystal_SMD_3215-2Pin_3.2x1.5mm,XC2127CT-ND
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+Component Groups:,40,,,,
+Component Count:,78,,,,
+Fitted Components:,78,,,,
+Number of PCBs:,1,,,,
+Total components:,78,,,,
+Schematic Version:,Rev 0,,,,
+Schematic Date:,,,,,
+PCB Variant:,normal,,,,
+BoM Date:,11/18/2021 0:40,,,,
+Schematic Source:,batteryless_gaming_device.sch,,,,
+KiCad Version:,Eeschema (5.1.10)-1,,,,
