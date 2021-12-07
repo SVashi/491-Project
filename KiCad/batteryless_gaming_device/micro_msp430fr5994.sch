@@ -560,7 +560,7 @@ Wire Wire Line
 Text Label 3150 5400 2    50   ~ 0
 P5.3_Button1
 Text Label 3150 5200 2    50   ~ 0
-P5.5_Button2
+P5.1_Button2
 Text Label 3150 5700 2    50   ~ 0
 P5.6_Button3
 Text Label 3150 5800 2    50   ~ 0
@@ -582,7 +582,7 @@ Wire Notes Line
 Wire Notes Line
 	1850 1000 1850 2050
 Text Label 1800 1600 2    50   ~ 0
-P5.5_Button2
+P5.1_Button2
 Text Label 1800 1700 2    50   ~ 0
 P5.6_Button3
 Text Label 1800 1800 2    50   ~ 0
@@ -641,7 +641,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 1350 6650 1350
 Text Label 6650 1100 2    50   ~ 0
-P5.5_Button2
+P5.1_Button2
 Text Label 6650 1250 2    50   ~ 0
 P5.6_Button3
 Text Label 6650 1350 2    50   ~ 0

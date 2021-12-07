@@ -215,8 +215,6 @@ Wire Wire Line
 	4900 4500 4900 4950
 Wire Wire Line
 	4900 4950 7050 4950
-Text Notes 6700 850  0    79   ~ 0
-TODO:\nFind correct connector for generator
 Wire Notes Line
 	6650 650  6650 1400
 Wire Notes Line
