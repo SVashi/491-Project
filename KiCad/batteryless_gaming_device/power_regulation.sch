@@ -155,34 +155,6 @@ F 4 "311-1344-1-ND" H 6590 3810 39  0000 C CNN "Digikey PN"
 	1    6500 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61950619
-P 6150 4050
-AR Path="/61950619" Ref="R?"  Part="1" 
-AR Path="/61941831/61950619" Ref="R503"  Part="1" 
-F 0 "R503" H 6218 4096 50  0000 L CNN
-F 1 "1M" H 6218 4005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6190 4040 50  0001 C CNN
-F 3 "~" H 6150 4050 50  0001 C CNN
-F 4 "511-1820-1-ND" H 6200 4300 39  0000 C CNN "Digikey PN"
-	1    6150 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6195061F
-P 6150 4400
-AR Path="/6195061F" Ref="R?"  Part="1" 
-AR Path="/61941831/6195061F" Ref="R504"  Part="1" 
-F 0 "R504" H 6218 4446 50  0000 L CNN
-F 1 "180k" H 6218 4355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6190 4390 50  0001 C CNN
-F 3 "~" H 6150 4400 50  0001 C CNN
-F 4 "RMCF0603FT180KCT-ND" H 6550 4300 39  0000 C CNN "Digikey PN"
-	1    6150 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 3750 4750 3400
 Wire Wire Line
@@ -271,45 +243,6 @@ F 3 "" H 6900 4200 50  0001 C CNN
 	1    6900 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 3850 6150 3850
-Wire Wire Line
-	6150 3900 6150 3850
-Connection ~ 6150 3850
-Wire Wire Line
-	6150 3850 6500 3850
-Wire Wire Line
-	6150 4200 6150 4250
-$Comp
-L power:GND #PWR?
-U 1 1 61950666
-P 6150 4600
-AR Path="/61950666" Ref="#PWR?"  Part="1" 
-AR Path="/61941831/61950666" Ref="#PWR0504"  Part="1" 
-F 0 "#PWR0504" H 6150 4350 50  0001 C CNN
-F 1 "GND" H 6155 4427 50  0000 C CNN
-F 2 "" H 6150 4600 50  0001 C CNN
-F 3 "" H 6150 4600 50  0001 C CNN
-	1    6150 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 4600 6150 4550
-Wire Wire Line
-	6150 4200 6050 4200
-Wire Wire Line
-	6050 4200 6050 4500
-Wire Wire Line
-	6050 4500 5700 4500
-Wire Wire Line
-	5700 4500 5700 4150
-Connection ~ 6150 4200
-Text Notes 6250 4800 0    50   ~ 0
-R1=R2*(Vout/Vfb-1)\nVout=3.3V,Vfb=0.5V,R2<200k\nR2=180k=>R1=1.00M
-Text Notes 6200 3950 0    50   ~ 0
-R1
-Text Notes 6200 4300 0    50   ~ 0
-R2
 Wire Wire Line
 	2300 3750 2450 3750
 Wire Wire Line
@@ -403,7 +336,7 @@ F 0 "R502" V 4900 4250 50  0000 L CNN
 F 1 "0" V 4818 4255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4790 4290 50  0001 C CNN
 F 3 "~" H 4750 4300 50  0001 C CNN
-F 4 "YAG3755CT-ND" H 4450 4300 39  0000 C CNN "Digikey PN"
+F 4 "YAG3755CT-ND" H 4850 4150 39  0000 C CNN "Digikey PN"
 	1    4750 4300
 	1    0    0    -1  
 $EndComp
@@ -433,8 +366,6 @@ Wire Wire Line
 	4200 4050 4200 3850
 Wire Wire Line
 	4200 3850 4250 3850
-Wire Wire Line
-	4200 4050 4900 4050
 Wire Wire Line
 	4200 3850 4200 3750
 Connection ~ 4200 3850
@@ -474,4 +405,69 @@ Wire Wire Line
 Connection ~ 3850 3750
 Wire Wire Line
 	3850 3750 4200 3750
+$Comp
+L Device:R_US R?
+U 1 1 61B125C6
+P 4200 4200
+AR Path="/61B125C6" Ref="R?"  Part="1" 
+AR Path="/61941831/61B125C6" Ref="R503"  Part="1" 
+F 0 "R503" H 4268 4246 50  0000 L CNN
+F 1 "1M" H 4268 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4240 4190 50  0001 C CNN
+F 3 "~" H 4200 4200 50  0001 C CNN
+F 4 "511-1820-1-ND" H 4250 4350 39  0000 C CNN "Digikey PN"
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3850 6250 3850
+$Comp
+L Device:R_US R?
+U 1 1 61B1718F
+P 4200 4600
+AR Path="/61B1718F" Ref="R?"  Part="1" 
+AR Path="/61941831/61B1718F" Ref="R504"  Part="1" 
+F 0 "R504" H 4268 4646 50  0000 L CNN
+F 1 "2M" H 4268 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4240 4590 50  0001 C CNN
+F 3 "~" H 4200 4600 50  0001 C CNN
+F 4 "" H 3950 4750 39  0000 C CNN "Digikey PN"
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B17DBB
+P 4200 4750
+AR Path="/61B17DBB" Ref="#PWR?"  Part="1" 
+AR Path="/61941831/61B17DBB" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 4200 4500 50  0001 C CNN
+F 1 "GND" H 4205 4577 50  0000 C CNN
+F 2 "" H 4200 4750 50  0001 C CNN
+F 3 "" H 4200 4750 50  0001 C CNN
+	1    4200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4450 4200 4400
+Wire Wire Line
+	4200 4400 4600 4400
+Wire Wire Line
+	4600 4400 4600 4050
+Wire Wire Line
+	4600 4050 4900 4050
+Connection ~ 4200 4400
+Wire Wire Line
+	4200 4400 4200 4350
+Wire Wire Line
+	5700 4150 5700 4450
+Wire Wire Line
+	5700 4450 6250 4450
+Wire Wire Line
+	6250 4450 6250 3850
+Connection ~ 6250 3850
+Wire Wire Line
+	6250 3850 6500 3850
+Text Notes 4050 4650 2    50   ~ 0
+Not correct resistor values for UVLO
 $EndSCHEMATC

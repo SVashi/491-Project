@@ -51,33 +51,6 @@ Wire Wire Line
 Text HLabel 6350 4500 2    50   Output ~ 0
 Vout
 $Comp
-L Device:R_US R300
-U 1 1 6191BF70
-P 5850 3000
-F 0 "R300" V 5645 3000 50  0000 C CNN
-F 1 "1M" V 5736 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5890 2990 50  0001 C CNN
-F 3 "~" H 5850 3000 50  0001 C CNN
-F 4 "511-1820-1-ND" V 5950 3000 39  0000 C CNN "Digikey PN"
-	1    5850 3000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6200 3000 6000 3000
-Wire Wire Line
-	5400 4500 5450 4500
-Wire Wire Line
-	5450 4500 5450 3000
-Wire Wire Line
-	5450 3000 5700 3000
-Text Notes 5550 2700 0    50   ~ 0
-R1 = R2/(Vin/Vout - 1)\nVin=20,Vout=3.3,R2=1M\n=>R1=180k(lower is safer)
-Wire Wire Line
-	6200 3000 6550 3000
-Connection ~ 6200 3000
-Text HLabel 6550 3000 2    50   Output ~ 0
-generator_voltage
-$Comp
 L Device:R_US R?
 U 1 1 619B083B
 P 6000 4500
@@ -94,36 +67,6 @@ F 4 "YAG3755CT-ND" V 5900 4500 39  0000 C CNN "Digikey PN"
 $EndComp
 Wire Wire Line
 	6150 4500 6350 4500
-Connection ~ 5450 4500
-Wire Wire Line
-	5450 4500 5550 4500
-$Comp
-L Device:R_US R302
-U 1 1 6196F794
-P 6200 3300
-F 0 "R302" H 6100 3200 50  0000 C CNN
-F 1 "1M" H 6086 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6240 3290 50  0001 C CNN
-F 3 "~" H 6200 3300 50  0001 C CNN
-F 4 "511-1820-1-ND" H 5850 3400 39  0000 C CNN "Digikey PN"
-	1    6200 3300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 3000 6200 3150
-$Comp
-L power:GND #PWR0301
-U 1 1 619709AA
-P 6200 3500
-F 0 "#PWR0301" H 6200 3250 50  0001 C CNN
-F 1 "GND" H 6205 3327 50  0000 C CNN
-F 2 "" H 6200 3500 50  0001 C CNN
-F 3 "" H 6200 3500 50  0001 C CNN
-	1    6200 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3450 6200 3500
 $Comp
 L batteryless_gaming_device-rescue:SDA006 D300
 U 1 1 619799AF
@@ -143,4 +86,6 @@ Wire Wire Line
 Connection ~ 5550 4500
 Wire Wire Line
 	5550 4500 5850 4500
+Wire Wire Line
+	5400 4500 5550 4500
 $EndSCHEMATC

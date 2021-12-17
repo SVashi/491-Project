@@ -415,19 +415,15 @@ L Device:CP1_Small C206
 U 1 1 6199CFBC
 P 7400 2600
 F 0 "C206" H 7491 2646 50  0000 L CNN
-F 1 "220mF" H 7491 2555 50  0000 L CNN
+F 1 "100mF" H 7491 2555 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm" H 7400 2600 50  0001 C CNN
 F 3 "~" H 7400 2600 50  0001 C CNN
 	1    7400 2600
 	1    0    0    -1  
 $EndComp
 Text Notes 2600 3950 0    50   ~ 0
-VBAT_OV=4.2V\nVBAT_UV=1.3V\n\nVBAT_OK=1.5V\nVBAT_OK_HYST=1.8V\n
-Wire Wire Line
-	7300 3200 7700 3200
-Text HLabel 7700 3200 2    50   Output ~ 0
-VBAT_OK
-Text HLabel 8400 3800 2    50   Output ~ 0
+WANTED CHARACTERISTICS\nVBAT_OV=4.2V\nVBAT_UV=2.2V\n\nVBAT_OK=2.6V\nVBAT_OK_HYST=2.8V\n
+Text HLabel 8900 3800 2    50   Output ~ 0
 Vout
 $Comp
 L Connector:TestPoint TP?
@@ -464,7 +460,7 @@ Wire Wire Line
 	8000 3750 8000 3800
 Connection ~ 8000 3800
 Wire Wire Line
-	8000 3800 8400 3800
+	8000 3800 8600 3800
 Text HLabel 2450 2650 0    50   Input ~ 0
 Vin
 $Comp
@@ -597,4 +593,105 @@ Wire Wire Line
 	4200 2950 5100 2950
 Wire Wire Line
 	4200 2650 5100 2650
+$Comp
+L Device:CP1_Small C203
+U 1 1 61B2CBD0
+P 7900 2600
+F 0 "C203" H 7991 2646 50  0000 L CNN
+F 1 "100uF" H 7991 2555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm" H 7900 2600 50  0001 C CNN
+F 3 "~" H 7900 2600 50  0001 C CNN
+	1    7900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2700 7900 2700
+Connection ~ 7400 2700
+Wire Wire Line
+	7900 2500 7900 2450
+Wire Wire Line
+	7900 2450 7400 2450
+Connection ~ 7400 2450
+Text HLabel 7700 3200 2    50   Output ~ 0
+VBAT_OK
+Wire Wire Line
+	7300 3200 7700 3200
+Text HLabel 8900 2450 2    50   Output ~ 0
+Vsupercap
+$Comp
+L Device:R_US R?
+U 1 1 61BF204D
+P 8300 2450
+AR Path="/619A7303/61BF204D" Ref="R?"  Part="1" 
+AR Path="/61991596/61BF204D" Ref="R209"  Part="1" 
+F 0 "R209" V 8095 2450 50  0000 C CNN
+F 1 "1.1M" V 8186 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8340 2440 50  0001 C CNN
+F 3 "~" H 8300 2450 50  0001 C CNN
+F 4 "" V 8400 2450 39  0000 C CNN "Digikey PN"
+	1    8300 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 2450 8450 2450
+Wire Wire Line
+	7900 2450 8150 2450
+$Comp
+L Device:R_US R?
+U 1 1 61BF2059
+P 8650 2750
+AR Path="/619A7303/61BF2059" Ref="R?"  Part="1" 
+AR Path="/61991596/61BF2059" Ref="R210"  Part="1" 
+F 0 "R210" H 8550 2650 50  0000 C CNN
+F 1 "1M" H 8536 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8690 2740 50  0001 C CNN
+F 3 "~" H 8650 2750 50  0001 C CNN
+F 4 "511-1820-1-ND" H 8300 2850 39  0000 C CNN "Digikey PN"
+	1    8650 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 2450 8650 2600
+$Comp
+L power:GND #PWR?
+U 1 1 61BF2060
+P 8650 2950
+AR Path="/619A7303/61BF2060" Ref="#PWR?"  Part="1" 
+AR Path="/61991596/61BF2060" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 8650 2700 50  0001 C CNN
+F 1 "GND" H 8655 2777 50  0000 C CNN
+F 2 "" H 8650 2950 50  0001 C CNN
+F 3 "" H 8650 2950 50  0001 C CNN
+	1    8650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2900 8650 2950
+Connection ~ 7900 2450
+Wire Wire Line
+	8650 2450 8900 2450
+Connection ~ 8650 2450
+$Comp
+L Device:CP1_Small C209
+U 1 1 61C35FE5
+P 8600 4000
+F 0 "C209" H 8691 4046 50  0000 L CNN
+F 1 "100uF" H 8691 3955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm" H 8600 4000 50  0001 C CNN
+F 3 "~" H 8600 4000 50  0001 C CNN
+	1    8600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3800 8600 3900
+Connection ~ 8600 3800
+Wire Wire Line
+	8600 3800 8900 3800
+Wire Wire Line
+	8600 4100 8600 4150
+Wire Wire Line
+	8600 4150 7850 4150
+Connection ~ 7850 4150
+Text Notes 3500 4150 2    50   ~ 0
+Not correct resistor values for charactistics stated above
 $EndSCHEMATC

@@ -448,14 +448,12 @@ Button4
 Wire Notes Line
 	750  1000 750  2050
 Text Notes 800  1400 0    79   ~ 0
-Energy\nHarvesting\nGPIO/Analog In
-Text HLabel 1450 1950 0    50   Input ~ 0
-GeneratorVcc
+Energy\nHarvesting\nGPIO
 Wire Notes Line
 	750  2200 750  3250
 Text Notes 800  2600 0    79   ~ 0
-Energy\nHarvesting\nGPIO/Analog In
-Text HLabel 1250 2950 0    50   Input ~ 0
+Analog In
+Text HLabel 1450 2950 0    50   Input ~ 0
 VBAT_OK
 Text HLabel 7350 5850 0    50   Output ~ 0
 V_program
@@ -546,8 +544,6 @@ P5.2_CLK
 Text Label 9090 3100 2    50   ~ 0
 P5.0_DIN
 Wire Wire Line
-	1450 1950 2200 1950
-Wire Wire Line
 	2200 3300 3250 3300
 Wire Wire Line
 	3250 5400 2450 5400
@@ -577,8 +573,6 @@ Wire Wire Line
 	1250 1800 1800 1800
 Wire Notes Line
 	750  1000 1850 1000
-Wire Notes Line
-	750  2050 1850 2050
 Wire Notes Line
 	1850 1000 1850 2050
 Text Label 1800 1600 2    50   ~ 0
@@ -775,9 +769,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 3600 1600 3600
 Wire Wire Line
-	2200 1950 2200 3300
-Wire Wire Line
-	1250 2950 2100 2950
+	1450 2950 2100 2950
 Wire Wire Line
 	2100 2950 2100 3400
 Wire Wire Line
@@ -860,4 +852,12 @@ F 3 "~" H 1350 3700 50  0001 C CNN
 $EndComp
 NoConn ~ 3250 3900
 NoConn ~ 3250 4000
+Text HLabel 1450 2850 0    50   Input ~ 0
+Vsupercap_MSP
+Wire Wire Line
+	1450 2850 2200 2850
+Wire Wire Line
+	2200 2850 2200 3300
+Wire Notes Line
+	750  2050 1850 2050
 $EndSCHEMATC

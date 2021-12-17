@@ -21,6 +21,7 @@ F1 "power_storage.sch" 50
 F2 "Vin" I L 3050 3850 50 
 F3 "Vout" O R 4700 3850 50 
 F4 "VBAT_OK" O R 4700 4500 50 
+F5 "Vsupercap" O R 4700 4400 50 
 $EndSheet
 Wire Notes Line
 	3900 4450 3900 4250
@@ -114,7 +115,6 @@ U 619A7303
 F0 "Hand Crank" 50
 F1 "hand_crank_generator.sch" 50
 F2 "Vout" O R 2600 4200 50 
-F3 "generator_voltage" O R 2600 4750 50 
 $EndSheet
 $Sheet
 S 7050 2450 1900 3100
@@ -125,15 +125,15 @@ F2 "Button1" I L 7050 2650 50
 F3 "Button2" I L 7050 2750 50 
 F4 "Button3" I L 7050 2850 50 
 F5 "Button4" I L 7050 2950 50 
-F6 "GeneratorVcc" I L 7050 5100 50 
-F7 "VBAT_OK" I L 7050 4950 50 
-F8 "V_program" O L 7050 4000 50 
-F9 "P4.1" O R 8950 3700 50 
-F10 "P4.2" O R 8950 3800 50 
-F11 "P4.3" O R 8950 3900 50 
-F12 "P2.5" O R 8950 4000 50 
-F13 "P5.2" O R 8950 4100 50 
-F14 "P5.0" O R 8950 4200 50 
+F6 "VBAT_OK" I L 7050 4950 50 
+F7 "V_program" O L 7050 4000 50 
+F8 "P4.1" O R 8950 3700 50 
+F9 "P4.2" O R 8950 3800 50 
+F10 "P4.3" O R 8950 3900 50 
+F11 "P2.5" O R 8950 4000 50 
+F12 "P5.2" O R 8950 4100 50 
+F13 "P5.0" O R 8950 4200 50 
+F14 "Vsupercap_MSP" I L 7050 4800 50 
 $EndSheet
 Wire Wire Line
 	2600 3300 2850 3300
@@ -204,25 +204,17 @@ Wire Wire Line
 Wire Wire Line
 	2600 2650 7050 2650
 Wire Wire Line
-	2600 4750 2850 4750
-Wire Wire Line
-	2850 4750 2850 5100
-Wire Wire Line
-	2850 5100 7050 5100
-Wire Wire Line
 	4700 4500 4900 4500
 Wire Wire Line
 	4900 4500 4900 4950
 Wire Wire Line
 	4900 4950 7050 4950
 Wire Notes Line
-	6650 650  6650 1400
+	4450 600  4450 1350
 Wire Notes Line
-	6650 1400 7800 1400
+	4450 1350 8300 1350
 Wire Notes Line
-	7800 1400 7800 650 
-Wire Notes Line
-	6650 650  7800 650 
+	4450 600  8300 600 
 $Comp
 L Connector_Generic:Conn_01x03 J100
 U 1 1 61979531
@@ -509,4 +501,14 @@ F 3 "" H 9950 2000 50  0001 C CNN
 	1    9950 2000
 	1    0    0    -1  
 $EndComp
+Text Notes 4550 1050 0    50   ~ 0
+TODO:\nSpec resistors for uvlo ob boost regulator for ~2.5V\nRe-calculate resistor values for power storage ic for min 2.2V, vbat_ok is do not care currently\n\nUPDATE PCB to match changes made in schematic
+Wire Notes Line
+	8300 1350 8300 600 
+Wire Wire Line
+	4700 4400 5050 4400
+Wire Wire Line
+	5050 4400 5050 4800
+Wire Wire Line
+	5050 4800 7050 4800
 $EndSCHEMATC
